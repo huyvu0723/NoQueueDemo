@@ -87,23 +87,38 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
                 android:src="@mipmap/ic_table_food" />
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:src="@mipmap/ic_table_vegetable" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:src="@mipmap/ic_table_dessert" />
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:src="@mipmap/ic_table_water" />
+
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_table_water" />
         </LinearLayout>
     </LinearLayout>
 
