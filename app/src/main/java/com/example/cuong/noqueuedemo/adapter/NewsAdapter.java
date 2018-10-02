@@ -1,4 +1,4 @@
-package com.example.cuong.noqueuedemo;
+package com.example.cuong.noqueuedemo.adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -9,7 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.squareup.picasso.Picasso;
+import com.example.cuong.noqueuedemo.R;
+import com.example.cuong.noqueuedemo.model.News;
 
 import java.util.List;
 

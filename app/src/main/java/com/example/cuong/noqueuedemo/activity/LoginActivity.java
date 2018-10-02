@@ -1,13 +1,15 @@
-package com.example.cuong.noqueuedemo;
+package com.example.cuong.noqueuedemo.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class TableActivity extends AppCompatActivity {
+import com.example.cuong.noqueuedemo.R;
+
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_table);
+        setContentView(R.layout.activity_login);
     }
 }

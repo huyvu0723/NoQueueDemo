@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NoQueueDemo</string>
+    <string name="action_login_by_phone">Đăng nhập bằng SĐT</string>
+    <string name="action_login_by_facebook">Đăng nhập bằng Facebook</string>
+    <string name="action_personal_info">Thông tin cá nhân</string>
+    <string name="action_my_coupons">Coupon của tôi</string>
+    <string name="action_order_history">Lịch sử đặt hàng</string>
+    <string name="action_about_us">Về chúng tôi</string>
+    <string name="action_contact">Liên hệ</string>
 </resources>

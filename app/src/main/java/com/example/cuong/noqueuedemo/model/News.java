@@ -1,4 +1,4 @@
-package com.example.cuong.noqueuedemo;
+package com.example.cuong.noqueuedemo.model;
 
 public class News {
     private int mNewsImage;

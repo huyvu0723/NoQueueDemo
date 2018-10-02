@@ -1,4 +1,4 @@
-package com.example.cuong.noqueuedemo;
+package com.example.cuong.noqueuedemo.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.LinearLayout;
+
+import com.example.cuong.noqueuedemo.adapter.NewsAdapter;
+import com.example.cuong.noqueuedemo.R;
+import com.example.cuong.noqueuedemo.model.News;
 
 import java.util.ArrayList;
 import java.util.List;

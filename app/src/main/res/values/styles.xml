@@ -1,17 +1,42 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen" parent="AppTheme">
+    <style name="SplashTheme" parent="AppTheme">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <!--<style name="TextViewMontserratBold">-->
+        <!--<item name="fontPath">fonts/Montserrat-Bold.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewMontserratMedium">-->
+        <!--<item name="fontPath">fonts/Montserrat-Medium.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewMontserratMediumItalic">-->
+        <!--<item name="fontPath">fonts/Montserrat-MediumItalic.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewMontserratSemiBold">-->
+        <!--<item name="fontPath">fonts/Montserrat-SemiBold.otf</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewOpenSansRegular">-->
+        <!--<item name="fontPath">fonts/OpenSans-Regular.ttf</item>-->
+    <!--</style>-->
+
+    <!--<style name="TextViewOpenSansSemibold">-->
+        <!--<item name="fontPath">fonts/OpenSans-Semibold.ttf</item>-->
+    <!--</style>-->
+
 </resources>
