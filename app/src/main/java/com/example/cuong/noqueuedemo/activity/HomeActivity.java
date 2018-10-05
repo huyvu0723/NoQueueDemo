@@ -49,8 +49,4 @@ public class HomeActivity extends AppCompatActivity {
         mRecycleViewNews.setAdapter(mNewsAdapter);
     }
 
-    public void getTable(View view) {
-        Intent intent = new Intent(this, TableActivity.class);
-        startActivity(intent);
-    }
 }

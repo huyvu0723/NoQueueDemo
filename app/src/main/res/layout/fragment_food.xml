@@ -13,6 +13,6 @@
         android:layout_gravity="center"
         android:clipToPadding="false"
         android:paddingBottom="@dimen/dp50"
-        android:scrollbars="vertical"/>
+        android:scrollbars="vertical" />
 
 </LinearLayout>
