@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
         <!--<include-->
-            <!--android:id="@+id/tool_bar_cart_activity"-->
-            <!--layout="@layout/layout_toolbar"-->
-            <!--tools:ignore="InvalidId" />-->
+        <!--android:id="@+id/tool_bar_cart_activity"-->
+        <!--layout="@layout/layout_toolbar"-->
+        <!--tools:ignore="InvalidId" />-->
 
 
         <android.support.v4.widget.NestedScrollView

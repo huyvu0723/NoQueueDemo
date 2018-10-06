@@ -19,6 +19,7 @@
     <string name="title_voucher">Mã giảm giá</string>
     <string name="msg_voucher">Bạn có mã giảm giá? Nhập tại đây.</string>
     <string name="msg_notes">Bạn có muốn dặn dò gì không?</string>
+    <string name="title_activity_order_history">OrderHistoryActivity</string>
 
 
 </resources>

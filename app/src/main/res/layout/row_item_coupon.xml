@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_coupon"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp16"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/image_view_coupon"
+        android:layout_width="@dimen/dp128"
+        android:layout_height="@dimen/dp86"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"
+        app:riv_corner_radius="@dimen/dp4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_title_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_weight="1"
+            android:letterSpacing="0"
+            android:maxLines="2"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            tools:text="Giảm giá 25% trên tất cả đơn hàng đặt…" />
+
+        <TextView
+            android:id="@+id/text_view_date_coupon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_weight="1"
+            android:letterSpacing="0"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/sp16"
+            tools:text="HSD: 12/08/2018" />
+    </LinearLayout>
+</LinearLayout>
