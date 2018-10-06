@@ -13,8 +13,8 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:orientation="vertical"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -30,13 +30,24 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@mipmap/ic_back" />
+
                 </LinearLayout>
+
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="ĐƠN HÀNG #0908765BMW"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15"
+                    android:textStyle="bold"/>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dp196"
-                android:background="@color/light_grey_2"
+                android:background="@color/light_grey"
                 android:gravity="center"
                 android:paddingLeft="@dimen/dp16"
                 android:paddingRight="@dimen/dp16">
@@ -76,8 +87,8 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
 
                     <TextView
@@ -92,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp12"
-                        android:text="MÃ ĐƠN HÀNG: #060918GGWP"
+                        android:text="MÃ ĐƠN HÀNG: #0908765BMW"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14"
                         android:textStyle="bold" />
@@ -108,7 +119,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_marginTop="@dimen/dp10"
                         android:text="MÃ KHUYẾN MÃI"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14"
@@ -124,7 +135,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_marginTop="@dimen/dp10"
                         android:text="GHI CHÚ"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14"
@@ -140,7 +151,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp12"
+                        android:layout_marginTop="@dimen/dp10"
                         android:text="PHƯƠNG THỨC THANH TOÁN"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14"
@@ -156,26 +167,148 @@
                 </LinearLayout>
 
                 <View
-                    android:layout_marginTop="@dimen/dp20"
-                    android:layout_marginBottom="@dimen/dp16"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dp1"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginTop="@dimen/dp20"
                     android:background="@color/light_grey_2"></View>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="THÔNG TIN ĐƠN HÀNG"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:text="CHI TIẾT ĐƠN HÀNG"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/dp18"
                         android:textStyle="bold" />
 
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_view_order_history_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
                 </LinearLayout>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:paddingBottom="@dimen/dp22"
+                android:paddingLeft="@dimen/dp16"
+                android:paddingRight="@dimen/dp16"
+                android:paddingTop="@dimen/dp22">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background_cart_price"
+                    android:padding="@dimen/dp14">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Đơn hàng"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="37.000đ"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Vận chuyển"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="Miễn phí"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Giảm giá"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="37.000đ"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_margin="@dimen/dp10"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:background="@color/grey"></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TỔNG CỘNG"
+                            android:textColor="@color/red"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:text="37.000đ"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/sp14" />
+                    </LinearLayout>
+
+                </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>

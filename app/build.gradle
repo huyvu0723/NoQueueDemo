@@ -18,6 +18,10 @@ android {
     }
 }
 
+repositories {
+    jcenter()
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -35,4 +39,5 @@ dependencies {
     implementation 'com.android.support:design:27.1.1'
     implementation 'de.hdodenhof:circleimageview:2.2.0'
     implementation('eu.livotov.labs.android:CAMView:2.0.1@aar') { transitive = true }
+    implementation 'com.facebook.android:account-kit-sdk:4.+'
 }

@@ -40,10 +40,12 @@
                 android:layout_height="wrap_content"
                 android:text="@string/action_login_by_facebook"
                 android:textColor="@color/white"
+                android:textStyle="bold"
                 android:textSize="@dimen/sp14" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/linear_layout_login_by_phone"
             android:layout_width="match_parent"
             android:layout_height="@dimen/dp48"
             android:layout_marginLeft="@dimen/dp43"
@@ -64,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/action_login_by_phone"
                 android:textColor="@color/white"
+                android:textStyle="bold"
                 android:textSize="@dimen/sp14" />
         </LinearLayout>
     </LinearLayout>
