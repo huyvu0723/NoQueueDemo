@@ -8,45 +8,68 @@
     android:orientation="vertical"
     tools:context=".activity.AboutUsActivity">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="@dimen/dp64"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_back" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dp300"
-            android:src="@mipmap/ic_launcher" />
-
-        <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/dp16"
-            android:text="Thương hiệu Hoàng Yến từ lâu đã trở thành điểm đến quen thuộc của những người yêu ẩm thực truyền thống Việt Nam. Nét đặc sắc khó quên của Hoàng Yến được tạo nên bởi cái hồn trong mỗi món ăn, đúc kết từ niềm đam mê khám phá mỹ vị ẩm thực ba miền của người sáng lập và lưu giữ nét văn hoá trong mỗi tác phẩm. Hoàng Yến luôn chinh phục khách hàng dù là khó tính nhất bằng những món ăn rất riêng từ dân dã như cánh gà chiên nước mắm, thịt kho nước dừa, canh cua rau đay, chả cá cơm cháy,… đến các món sang trọng và tinh tế như tôm càng kho tàu, cơm hấp lá sen, hải sâm cơm cháy, miến cua tay cầm, chả cá Lã Vọng, chả mực Hạ Long,…
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp48"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_icon_back"
+                    android:layout_width="@dimen/dp64"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_back" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VỀ CHÚNG TÔI"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp300"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp16"
+                    android:text="Thương hiệu Việt Food từ lâu đã trở thành điểm đến quen thuộc của những người yêu ẩm thực truyền thống Việt Nam. Nét đặc sắc khó quên của Việt Food được tạo nên bởi cái hồn trong mỗi món ăn, đúc kết từ niềm đam mê khám phá mỹ vị ẩm thực ba miền của người sáng lập và lưu giữ nét văn hoá trong mỗi tác phẩm. Việt Food luôn chinh phục khách hàng dù là khó tính nhất bằng những món ăn rất riêng từ dân dã như cánh gà chiên nước mắm, thịt kho nước dừa, canh cua rau đay, chả cá cơm cháy,… đến các món sang trọng và tinh tế như tôm càng kho tàu, cơm hấp lá sen, hải sâm cơm cháy, miến cua tay cầm, chả cá Lã Vọng, chả mực Hạ Long,…
 
 Thực khách có thể tự mình khám phá nét duyên của ẩm thực Việt Nam qua những món ăn truyền thống cũng như những món được biến tấu sáng tạo từ những nguyên liệu vốn đơn giản và thuần Việt tại Hoàng Yến Vietnamese Cuisine.
 
-Trong suốt hơn 30 năm hình thành và phát triển, từ niềm đam mê ẩm thực dân tộc, hệ thống nhà hàng Hoàng Yến Vietnamese Cuisine không ngừng mở rộng và phát triển thêm nhiều chi nhánh mới với mong muốn mong muốn mang đến khách hàng những món ăn nồng nàn hương vị truyền thống nhưng cũng rất riêng, rất Hoàng Yến.
+Trong suốt hơn 30 năm hình thành và phát triển, từ niềm đam mê ẩm thực dân tộc, hệ thống nhà hàng Việt Food Vietnamese Cuisine không ngừng mở rộng và phát triển thêm nhiều chi nhánh mới với mong muốn mong muốn mang đến khách hàng những món ăn nồng nàn hương vị truyền thống nhưng cũng rất riêng, rất Việt Nam.
 
 "
-            android:textColor="@color/light_black"
-            android:textSize="@dimen/sp16" />
-    </LinearLayout>
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>

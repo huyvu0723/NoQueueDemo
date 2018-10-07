@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.adapter.NewsAdapter;
 import com.example.cuong.noqueuedemo.R;
@@ -15,10 +16,13 @@ import com.example.cuong.noqueuedemo.model.News;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
     private RecyclerView mRecycleViewNews;
     private List<News> mNewsList;
     private NewsAdapter mNewsAdapter;
+    private LinearLayout mLnlProfile, mLnlScanQR;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +43,10 @@ public class HomeActivity extends AppCompatActivity {
         LinearLayoutManager linearLayout = new LinearLayoutManager(
                 HomeActivity.this, LinearLayoutManager.VERTICAL, false);
         mRecycleViewNews.setLayoutManager(linearLayout);
-
+        mLnlProfile = findViewById(R.id.linear_layout_user_pircture);
+        mLnlProfile.setOnClickListener(this);
+        mLnlScanQR = findViewById(R.id.linear_layout_scan_qr);
+        mLnlScanQR.setOnClickListener(this);
     }
 
     private void initialData(){
@@ -55,4 +62,15 @@ public class HomeActivity extends AppCompatActivity {
         mRecycleViewNews.setAdapter(mNewsAdapter);
     }
 
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.linear_layout_user_pircture:
+                ProfileActivity.intentToProfileActivity(HomeActivity.this);
+                break;
+            case R.id.linear_layout_scan_qr:
+                ScanQRActivity.intentToScanQRActivity(HomeActivity.this);
+                break;
+        }
+    }
 }

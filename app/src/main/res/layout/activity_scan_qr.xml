@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,30 +10,30 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp60"
-        android:orientation="horizontal"
+        android:background="@color/white"
         android:gravity="center_vertical"
-        android:background="@color/white">
+        android:orientation="horizontal">
 
         <LinearLayout
-            android:layout_width="@dimen/dp40"
-            android:layout_height="@dimen/dp40"
-            android:gravity="center">
+            android:id="@+id/linear_layout_icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/dp15">
 
             <ImageView
-                android:layout_width="@dimen/dp40"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@mipmap/ic_back"/>
+                android:src="@mipmap/ic_back" />
         </LinearLayout>
-
-
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scan mã QF trên bàn"
+            android:text="SCAN MÃ QR TRÊN BÀN"
+            android:textColor="@color/red"
             android:textSize="@dimen/sp15"
-            android:textStyle="bold"
-            android:textColor="@color/red"/>
+            android:textStyle="bold" />
     </LinearLayout>
 
     <eu.livotov.labs.android.camview.ScannerLiveView

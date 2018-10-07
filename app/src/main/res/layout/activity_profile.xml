@@ -14,8 +14,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/light_grey">
+            android:background="@color/light_grey"
+            android:orientation="vertical">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -23,10 +23,11 @@
                 android:layout_marginTop="@dimen/dp20">
 
                 <LinearLayout
-                    android:layout_width="@dimen/dp40"
-                    android:layout_height="@dimen/dp40"
-                    android:layout_marginLeft="@dimen/dp5"
-                    android:gravity="center">
+                    android:id="@+id/linear_layout_icon_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp15">
 
                     <ImageView
                         android:layout_width="wrap_content"
@@ -40,10 +41,11 @@
                     android:gravity="center"
                     android:orientation="vertical">
 
-                    <ImageView
+                    <com.makeramen.roundedimageview.RoundedImageView
                         android:layout_width="@dimen/dp88"
                         android:layout_height="@dimen/dp88"
-                        android:src="@mipmap/ic_launcher" />
+                        android:src="@mipmap/ic_launcher"
+                        app:riv_corner_radius="@dimen/dp50" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -143,6 +145,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_personal_info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -179,6 +182,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_my_coupon"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -215,6 +219,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_order_history"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -251,6 +256,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_about_us"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -287,6 +293,42 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_policy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/dp18"
+                    android:paddingLeft="@dimen/dp18"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingTop="@dimen/dp18">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp18"
+                        android:text="@string/action_policy"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/sp14" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_view_more" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_contact"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
@@ -318,8 +360,6 @@
                             android:layout_height="wrap_content"
                             android:src="@mipmap/ic_view_more" />
                     </LinearLayout>
-
-
                 </LinearLayout>
 
             </LinearLayout>
@@ -341,20 +381,21 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp2"
                     android:text="@string/title_version"
                     android:textColor="@color/light_black"
-                    android:layout_marginTop="@dimen/dp2"
                     android:textSize="@dimen/sp12" />
 
                 <TextView
+                    android:id="@+id/text_view_layout_logout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/title_logout"
                     android:gravity="center"
+                    android:paddingBottom="@dimen/dp24"
+                    android:paddingTop="@dimen/dp24"
+                    android:text="@string/title_logout"
                     android:textColor="@color/red"
                     android:textSize="@dimen/sp14"
-                    android:paddingTop="@dimen/dp24"
-                    android:paddingBottom="@dimen/dp24"
                     android:textStyle="bold" />
 
 

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp20"
+    android:paddingTop="@dimen/dp20">
+
+    <TextView
+        android:id="@+id/text_view_table_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn đang ở bàn số 15"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sp18" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_cancel_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp30"
+            android:background="@drawable/button_cancel_dialog"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+
+            android:text="Scan LẠI"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/button_choose_food"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_ok_dialog"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="CHỌN MÓN"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp15"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>

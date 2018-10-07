@@ -1,8 +1,12 @@
 package com.example.cuong.noqueuedemo.activity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.CouponFragment;
@@ -12,16 +16,29 @@ import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
 
 import java.util.ArrayList;
 
-public class CouponActivity extends AppCompatActivity {
-
+public class CouponActivity extends AppCompatActivity implements View.OnClickListener{
+    private LinearLayout mLnlBack;
     private FragmentPagerItemAdapter mCouponFragmentAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coupon);
+        initialView();
         initialSmartTabLayout();
+
     }
+
+    public static void intentToCouponActivity(Activity activity){
+        Intent intent = new Intent(activity, CouponActivity.class);
+        activity.startActivity(intent);
+    }
+
+    private void initialView(){
+        mLnlBack = findViewById(R.id.linear_layout_icon_back);
+        mLnlBack.setOnClickListener(this);
+    }
+
 
     private void initialSmartTabLayout() {
 
@@ -42,5 +59,14 @@ public class CouponActivity extends AppCompatActivity {
         //set viewPager for SmartTabLayout
         SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.view_pager_coupon_tab);
         viewPagerTab.setViewPager(viewPager);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.linear_layout_icon_back:
+                finish();
+                break;
+        }
     }
 }

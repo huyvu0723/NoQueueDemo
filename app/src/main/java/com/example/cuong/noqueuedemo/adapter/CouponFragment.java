@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
+import com.example.cuong.noqueuedemo.activity.CouponDetailActivity;
 import com.example.cuong.noqueuedemo.model.Coupon;
 
 import java.util.ArrayList;
@@ -57,5 +58,11 @@ public class CouponFragment extends Fragment {
 
         mCouponAdapter = new CouponAdapter(getContext(), mCouponList);
         mRecycleViewCoupons.setAdapter(mCouponAdapter);
+        mCouponAdapter.setOnCouponDetailListener(new CouponAdapter.OnClickCouponDetailCallBack() {
+            @Override
+            public void setOnClickCouponDetailCallBack(int position) {
+                CouponDetailActivity.intentToCouponDetailActivity(getActivity());
+            }
+        });
     }
 }

@@ -1,42 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".activity.PolicyActivity">
 
-    <LinearLayout
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48">
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="@dimen/dp64"
-            android:layout_height="match_parent"
-            android:gravity="center">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@mipmap/ic_back" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/dp16">
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/sp16"
+            android:orientation="vertical">
 
-            android:textColor="@color/light_black"
-            android:text="Tại Việt Food, chúng tôi cam kết tuân thủ việc bảo vệ quyền riêng tư và bảo mật thông tin cá nhân (gọi tắt là PII) mà bạn cung cấp. Thông tin cá nhân có thể là tên, địa chỉ, điện thoại hoặc địa chỉ email.
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_icon_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/dp14">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:src="@mipmap/ic_back" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QUY ĐỊNH CỦA VIỆT FOOD"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp15"
+
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/dp16">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tại Việt Food, chúng tôi cam kết tuân thủ việc bảo vệ quyền riêng tư và bảo mật thông tin cá nhân (gọi tắt là PII) mà bạn cung cấp. Thông tin cá nhân có thể là tên, địa chỉ, điện thoại hoặc địa chỉ email.
 
 Chính sách riêng tư này giải thích về cách thức chúng tôi xử lý và bảo vệ thông tin cá nhân theo qui định được chấp nhận bởi hiệp hội bảo vệ chính sách cá nhân. Những chính sách này được điều chỉnh vào ngày 18 tháng 3 năm 2011.
 
@@ -62,7 +82,13 @@ Chúng tôi bảo vệ thông tin cá nhân bạn như thế nào?
 
 Chúng tôi lưu trữ thông tin gì?
 
-Với nỗ lực duy trì dịch vụ của chúng tôi đơn giản tối đa, chúng tôi không tạo, sử dụng hoặc lưu trữ thông tin của khách hàng ngoài mục đích gửi các thông tin hấp dẫn (xem chi tiết dưới đây). Chúng tôi chỉ sử dụng PII trả lời và yêu cầu cho dịch vụ và sản phẩm của chúng tôi. Chúng tôi mô tả cụ thể thông tin yêu cầu gửi tới bạn của những dịch vụ hay sản phẩm bạn yêu cầu."/>
-    </LinearLayout>
+Với nỗ lực duy trì dịch vụ của chúng tôi đơn giản tối đa, chúng tôi không tạo, sử dụng hoặc lưu trữ thông tin của khách hàng ngoài mục đích gửi các thông tin hấp dẫn (xem chi tiết dưới đây). Chúng tôi chỉ sử dụng PII trả lời và yêu cầu cho dịch vụ và sản phẩm của chúng tôi. Chúng tôi mô tả cụ thể thông tin yêu cầu gửi tới bạn của những dịch vụ hay sản phẩm bạn yêu cầu."
+
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 
 </LinearLayout>

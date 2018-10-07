@@ -27,6 +27,7 @@
                     android:layout_height="@dimen/dp48">
 
                     <LinearLayout
+                        android:id="@+id/linear_layout_icon_back"
                         android:layout_width="@dimen/dp64"
                         android:layout_height="match_parent"
                         android:gravity="center">
@@ -73,7 +74,7 @@
                     android:layout_marginTop="@dimen/dp24"
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp22"
-                    tools:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietFood. Không áp dụng cùng chương trình khuyến mãi khác." />
+                    android:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietFood. Không áp dụng cùng chương trình khuyến mãi khác." />
 
                 <TextView
                     android:id="@+id/text_view_coupon_expired_date"
@@ -85,7 +86,7 @@
                     android:lineSpacingExtra="@dimen/sp22"
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp18"
-                    tools:text="Hạn sử dụng: 12/08/2018" />
+                    android:text="Hạn sử dụng: 12/08/2018" />
 
             </LinearLayout>
 

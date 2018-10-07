@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_cart_price"
+
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dp20">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc chắn muốn đăng xuất không?"
+        android:textColor="@color/red"
+        android:textSize="@dimen/sp14" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button_cancel_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_cancel_dialog"
+            android:text="Hủy"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/button_ok_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp30"
+            android:textAllCaps="false"
+            android:background="@drawable/button_ok_dialog"
+            android:text="Đồng ý"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

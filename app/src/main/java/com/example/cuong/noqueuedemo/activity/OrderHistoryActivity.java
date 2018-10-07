@@ -1,9 +1,13 @@
 package com.example.cuong.noqueuedemo.activity;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.OrderHistoryAdapter;
@@ -12,10 +16,11 @@ import com.example.cuong.noqueuedemo.model.OrderHistory;
 
 import java.util.ArrayList;
 
-public class OrderHistoryActivity extends AppCompatActivity {
+public class OrderHistoryActivity extends AppCompatActivity implements View.OnClickListener {
     private RecyclerView mRecycleViewOrderHistory;
     private ArrayList<OrderHistory> mOrderHistoryList;
     private OrderHistoryAdapter mOrderHistoryAdapter;
+    private LinearLayout mLnlBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +30,20 @@ public class OrderHistoryActivity extends AppCompatActivity {
         initialData();
     }
 
+    public static void intentToOrderHistoryActivity(Activity activity) {
+        Intent intent = new Intent(activity, OrderHistoryActivity.class);
+        activity.startActivity(intent);
+    }
+
     private void initialView() {
         mRecycleViewOrderHistory = findViewById(R.id.recycler_view_order_history);
         mRecycleViewOrderHistory.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(OrderHistoryActivity.this,
                 LinearLayoutManager.VERTICAL, false);
         mRecycleViewOrderHistory.setLayoutManager(linearLayoutManager);
+
+        mLnlBack = findViewById(R.id.linear_layout_icon_back);
+        mLnlBack.setOnClickListener(this);
     }
 
     private void initialData() {
@@ -67,5 +80,14 @@ public class OrderHistoryActivity extends AppCompatActivity {
 
         mOrderHistoryAdapter = new OrderHistoryAdapter(OrderHistoryActivity.this, mOrderHistoryList);
         mRecycleViewOrderHistory.setAdapter(mOrderHistoryAdapter);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.linear_layout_icon_back:
+                finish();
+                break;
+        }
     }
 }
