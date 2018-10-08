@@ -52,13 +52,13 @@
                 android:layout_width="@dimen/dp20"
                 android:layout_height="@dimen/dp20"
                 android:layout_weight="10"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_mail" />
 
             <TextView
                 android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:layout_weight="80"
-                android:text="\@PassioCoffeeVN"
+                android:text="\@VietFood"
                 android:textColor="@color/light_black"
                 android:textSize="@dimen/sp14" />
 
@@ -81,14 +81,14 @@
                 android:layout_width="@dimen/dp20"
                 android:layout_height="@dimen/dp20"
                 android:layout_weight="10"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_phone2" />
 
             <TextView
                 android:id="@+id/text_view_phone_number_passio"
                 android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:layout_weight="80"
-                android:text="1900 9434"
+                android:text="1900 9999"
                 android:textColor="@color/light_black"
                 android:textSize="@dimen/sp14" />
 
@@ -111,14 +111,14 @@
                 android:layout_width="@dimen/dp20"
                 android:layout_height="@dimen/dp20"
                 android:layout_weight="10"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/ic_contact" />
 
             <TextView
                 android:id="@+id/text_view_email"
                 android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:layout_weight="80"
-                android:text="hello@passiocoffee.com"
+                android:text="contact@vietfood.com"
                 android:textColor="@color/light_black"
                 android:textSize="@dimen/sp14" />
 

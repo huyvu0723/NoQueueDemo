@@ -60,7 +60,7 @@
                     android:layout_height="@dimen/dp88"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginBottom="@dimen/dp16"
-                    android:src="@mipmap/ic_launcher" />
+                    android:src="@mipmap/ic_logo2" />
 
                 <ImageView
                 android:layout_width="@dimen/dp24"

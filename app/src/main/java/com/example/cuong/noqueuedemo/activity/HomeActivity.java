@@ -62,21 +62,22 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initialData(){
         mNewsList = new ArrayList<>();
-//        mNewsList.add(new News(R.mipmap.ic_news, "Trà sửa khoai môn khuyến mãi 50% cho dịp hè"));
-        mNewsList.add(new News(R.mipmap.ic_no_news, "Bạn ơi, bạn bỏ quên ly trà sửa này!"));
-        mNewsList.add(new News(R.mipmap.ic_food1, "Xôi Bà Chiểu ngon không chịu nổi"));
-        mNewsList.add(new News(R.mipmap.ic_food2, "Xá xíu Bà Bảy quận 4 đang khuynh đảo giới trẻ"));
-        mNewsList.add(new News(R.mipmap.ic_food3, "Bánh mì hoành thánh ngon lạ kỳ"));
-        mNewsList.add(new News(R.mipmap.ic_food4, "Mùa hè thử sức với bánh khọt truyền thống"));
+        mNewsList.add(new News(R.mipmap.ic_new8, "Trà sửa khoai môn khuyến mãi 50% cho dịp hè"));
+        mNewsList.add(new News(R.mipmap.ic_new9, "Bạn ơi, bạn bỏ quên ly trà sửa này!"));
+        mNewsList.add(new News(R.mipmap.ic_new3, "Xôi Bà Chiểu ngon không chịu nổi"));
+        mNewsList.add(new News(R.mipmap.ic_new4, "Xá xíu Bà Bảy quận 4 đang khuynh đảo giới trẻ"));
+        mNewsList.add(new News(R.mipmap.ic_new5, "Bánh mì hoành thánh ngon lạ kỳ"));
+        mNewsList.add(new News(R.mipmap.ic_new6, "Mùa hè thử sức với bánh khọt truyền thống"));
 
         mNewsAdapter = new NewsAdapter(mNewsList, this);
         mRecycleViewNews.setAdapter(mNewsAdapter);
 
 
         mDailyFoodList = new ArrayList<>();
-        mDailyFoodList.add(R.mipmap.ic_launcher);
-        mDailyFoodList.add(R.mipmap.ic_launcher);
-        mDailyFoodList.add(R.mipmap.ic_launcher);
+        mDailyFoodList.add(R.mipmap.bunbohue);
+        mDailyFoodList.add(R.mipmap.cachienxu);
+        mDailyFoodList.add(R.mipmap.cakhoto);
+        mDailyFoodList.add(R.mipmap.chogio);
 
         mDailyFoodAdapter = new DailyFoodAdapter((ArrayList<Integer>) mDailyFoodList,HomeActivity.this);
         mRecycleViewDailyFood.setAdapter(mDailyFoodAdapter);
