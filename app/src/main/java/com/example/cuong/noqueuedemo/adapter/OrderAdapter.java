@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.cuong.noqueuedemo.R;
@@ -19,10 +20,19 @@ import java.util.List;
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
     private List<Food> mFoodList;
     private Context mContext;
+    private OnClickToProductItem mOnClickToProductItem;
+
+    public void setmOnClickToProductItem(OnClickToProductItem mOnClickToProductItem) {
+        this.mOnClickToProductItem = mOnClickToProductItem;
+    }
 
     public OrderAdapter(List<Food> mFoodList, Context mContext) {
         this.mFoodList = mFoodList;
         this.mContext = mContext;
+    }
+
+    public interface OnClickToProductItem{
+        void setOnClickToProductItem(int position);
     }
 
     @NonNull
@@ -35,12 +45,17 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Food food = mFoodList.get(position);
         holder.mImgPicture.setImageResource(food.getPicUrl());
         holder.mTxtTitle.setText(food.getProductName());
         holder.mTxtPrice.setText(food.getUnitPrice() + "");
-
+        holder.mCardViewFoodItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mOnClickToProductItem.setOnClickToProductItem(position);
+            }
+        });
     }
 
     @Override
@@ -52,6 +67,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
         public ImageView mImgPicture;
         public TextView mTxtTitle, mTxtPrice, mTxtQuantity;
         public CardView mCardViewFood;
+        public CardView mCardViewFoodItem;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -60,6 +77,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
             mTxtPrice = itemView.findViewById(R.id.text_view_price);
             mTxtQuantity = itemView.findViewById(R.id.text_view_order_selected_quantity);
             mCardViewFood = itemView.findViewById(R.id.card_view_food);
+            mCardViewFoodItem = itemView.findViewById(R.id.card_view_food);
         }
     }
 }

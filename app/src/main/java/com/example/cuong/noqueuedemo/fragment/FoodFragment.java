@@ -60,6 +60,12 @@ public class FoodFragment extends Fragment {
 
         mOrderAdapter = new OrderAdapter(mFoodList, getActivity());
         mRecycleViewFood.setAdapter(mOrderAdapter);
+        mOrderAdapter.setmOnClickToProductItem(new OrderAdapter.OnClickToProductItem() {
+            @Override
+            public void setOnClickToProductItem(int position) {
+                showBottomSheet(position);
+            }
+        });
     }
 
     private int calculateNumberOfColumns(Context context) {
@@ -69,8 +75,9 @@ public class FoodFragment extends Fragment {
         return noOfColumns;
     }
 
-    public FoodFragment() {
-        // Required empty public constructor
-    }
+    private void showBottomSheet(final int position) {
+        final OrderExtraFragment addOrderExtraBottomDialogFragment = OrderExtraFragment.newInstance();
+        addOrderExtraBottomDialogFragment.show(getFragmentManager(), "Show bottom sheet diaplog product detail");
 
+    }
 }

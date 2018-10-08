@@ -70,12 +70,6 @@ public class ScanQRActivity extends AppCompatActivity implements View.OnClickLis
 //                Toast.makeText(ScanQRActivity.this, data, Toast.LENGTH_SHORT).show();
 
                 showTableNumberDialog(data);
-                if (camera != null) {
-                    if (camera.getCamera() != null && camera.getCamera().getController() != null) {
-                        camera.getCamera().getController().switchFlashlight(false);
-                    }
-                    camera.stopScanner();
-                }
             }
         });
     }
@@ -90,8 +84,13 @@ public class ScanQRActivity extends AppCompatActivity implements View.OnClickLis
         btnChooseFood.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (camera != null) {
+                    if (camera.getCamera() != null && camera.getCamera().getController() != null) {
+                        camera.getCamera().getController().switchFlashlight(false);
+                    }
+                    camera.stopScanner();
+                }
                 OrderActivity.intentToOrderActivity(ScanQRActivity.this);
-                finish();
             }
         });
         dialog.show();

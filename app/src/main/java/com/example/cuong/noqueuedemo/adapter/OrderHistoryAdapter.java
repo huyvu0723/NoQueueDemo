@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.cuong.noqueuedemo.R;
@@ -19,10 +20,19 @@ import java.util.ArrayList;
 public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder>{
     private Context mContext;
     private ArrayList<OrderHistory> mOrderHistoryList;
+    private OnClickToOrderDetail mOnClickToOrderDetail;
+
+    public void setmOnClickToOrderDetail(OnClickToOrderDetail mOnClickToOrderDetail) {
+        this.mOnClickToOrderDetail = mOnClickToOrderDetail;
+    }
 
     public OrderHistoryAdapter(Context mContext, ArrayList<OrderHistory> mOrderHistoryList) {
         this.mContext = mContext;
         this.mOrderHistoryList = mOrderHistoryList;
+    }
+
+    public interface OnClickToOrderDetail{
+        void setOnClickToOrderDetail(int position);
     }
 
     @NonNull
@@ -35,7 +45,7 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         OrderHistory orderHistory = mOrderHistoryList.get(position);
         holder.mTxtOrderCode.setText("Đơn hàng " + orderHistory.getOrderCode());
         holder.mTxtCreatedDate.setText("Ngày " + orderHistory.getCreatedDate());
@@ -51,6 +61,12 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
         if(position == (mOrderHistoryList.size() - 1)){
             holder.mLine.setVisibility(View.GONE);
         }
+        holder.mLnlOrderDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mOnClickToOrderDetail.setOnClickToOrderDetail(position);
+            }
+        });
     }
 
     @Override
@@ -63,6 +79,8 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
                 mTxtTotal, mTxtPoint;
         private ImageView mImgPicture;
         private View mLine;
+        private LinearLayout mLnlOrderDetail;
+
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -73,6 +91,8 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
             mTxtPoint = itemView.findViewById(R.id.text_view_point);
             mImgPicture = itemView.findViewById(R.id.image_view_picture);
             mLine = itemView.findViewById(R.id.view_straight_line);
+            mLnlOrderDetail = itemView.findViewById(R.id.linear_layout_order_history_detail);
+
         }
     }
 }

@@ -9,6 +9,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import com.example.cuong.noqueuedemo.adapter.DailyFoodAdapter;
 import com.example.cuong.noqueuedemo.adapter.NewsAdapter;
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.model.News;
@@ -17,9 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HomeActivity extends AppCompatActivity implements View.OnClickListener{
-    private RecyclerView mRecycleViewNews;
+    private RecyclerView mRecycleViewNews, mRecycleViewDailyFood;
     private List<News> mNewsList;
+    private List<Integer> mDailyFoodList;
     private NewsAdapter mNewsAdapter;
+    private DailyFoodAdapter mDailyFoodAdapter;
     private LinearLayout mLnlProfile, mLnlScanQR;
 
 
@@ -43,10 +46,18 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         LinearLayoutManager linearLayout = new LinearLayoutManager(
                 HomeActivity.this, LinearLayoutManager.VERTICAL, false);
         mRecycleViewNews.setLayoutManager(linearLayout);
+
         mLnlProfile = findViewById(R.id.linear_layout_user_pircture);
         mLnlProfile.setOnClickListener(this);
         mLnlScanQR = findViewById(R.id.linear_layout_scan_qr);
         mLnlScanQR.setOnClickListener(this);
+
+        mRecycleViewDailyFood = findViewById(R.id.recycle_view_dayli_food);
+        mRecycleViewDailyFood.setHasFixedSize(true);
+        linearLayout = new LinearLayoutManager(
+                HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        mRecycleViewDailyFood.setLayoutManager(linearLayout);
+
     }
 
     private void initialData(){
@@ -60,6 +71,15 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
         mNewsAdapter = new NewsAdapter(mNewsList, this);
         mRecycleViewNews.setAdapter(mNewsAdapter);
+
+
+        mDailyFoodList = new ArrayList<>();
+        mDailyFoodList.add(R.mipmap.ic_launcher);
+        mDailyFoodList.add(R.mipmap.ic_launcher);
+        mDailyFoodList.add(R.mipmap.ic_launcher);
+
+        mDailyFoodAdapter = new DailyFoodAdapter((ArrayList<Integer>) mDailyFoodList,HomeActivity.this);
+        mRecycleViewDailyFood.setAdapter(mDailyFoodAdapter);
     }
 
     @Override

@@ -16,7 +16,7 @@ import com.example.cuong.noqueuedemo.R;
 import com.facebook.accountkit.AccountKit;
 
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
-    private LinearLayout mLnlPersonalInfo, mLnlMyCoupon, mLnlOrderHistory,
+    private LinearLayout mLnlMemberCard, mLnlPersonalInfo, mLnlMyCoupon, mLnlOrderHistory,
             mLnlAboutUs, mLnlContact, mLnlBack, mLnlPolicy;
     private TextView mTxtLogout;
 
@@ -49,12 +49,16 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         mTxtLogout.setOnClickListener(this);
         mLnlPolicy = findViewById(R.id.linear_layout_policy);
         mLnlPolicy.setOnClickListener(this);
-
+        mLnlMemberCard = findViewById(R.id.linear_layout_member_card);
+        mLnlMemberCard.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.linear_layout_member_card:
+                MemberCardActivity.intentToMemberCardActivity(ProfileActivity.this);
+                break;
             case R.id.linear_layout_personal_info:
                 CustomerInfoActivity.intentToCustomerInfoActivity(ProfileActivity.this);
                 break;

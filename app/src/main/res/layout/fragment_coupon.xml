@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/dp24"
-    tools:context=".adapter.CouponFragment">
+    tools:context=".fragment.CouponFragment">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycle_view_coupon"

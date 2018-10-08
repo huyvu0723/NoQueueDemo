@@ -21,6 +21,10 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="CheckBox" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/red</item>
+        <item name="android:textColorSecondary">@color/silver</item>
+    </style>
     <!--<style name="TextViewMontserratBold">-->
     <!--<item name="fontPath">fonts/Montserrat-Bold.otf</item>-->
     <!--</style>-->

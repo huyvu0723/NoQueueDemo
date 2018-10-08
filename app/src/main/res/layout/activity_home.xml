@@ -20,27 +20,27 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="wrap_content"
                 android:background="@color/red"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/linear_layout_user_pircture"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:gravity="center_vertical">
 
                     <LinearLayout
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:background="@drawable/background_avatar"
                         android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
                             android:layout_gravity="center"
                             android:scaleType="centerCrop"
                             android:src="@mipmap/ic_user" />
@@ -71,28 +71,28 @@
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="right|center_vertical">
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="right|center_vertical">-->
 
-                    <LinearLayout
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:layout_marginRight="20dp"
-                        android:background="@drawable/background_avatar"
-                        android:gravity="center">
+                <!--<LinearLayout-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="45dp"-->
+                <!--android:layout_marginRight="20dp"-->
+                <!--android:background="@drawable/background_avatar"-->
+                <!--android:gravity="center">-->
 
-                        <ImageView
-                            android:layout_width="35dp"
-                            android:layout_height="35dp"
-                            android:layout_gravity="center"
-                            android:src="@mipmap/ic_notification" />
+                <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:src="@mipmap/ic_notification" />-->
 
-                    </LinearLayout>
+                <!--</LinearLayout>-->
 
 
-                </LinearLayout>
+                <!--</LinearLayout>-->
 
             </LinearLayout>
 
@@ -110,7 +110,7 @@
                     android:layout_marginBottom="16dp"
                     android:text="SCAN QR CỦA BÀN ĐỂ GỌI MÓN"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/sp16"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -164,9 +164,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
-                    android:text="CÁC MÓN MỚI"
+                    android:text="MÓN NGON HÔM NAY"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/sp16"
                     android:textStyle="bold" />
 
                 <LinearLayout
@@ -177,7 +177,7 @@
                     android:orientation="vertical">
 
                     <android.support.v7.widget.RecyclerView
-                        android:id="@+id/recycle_view_new_food"
+                        android:id="@+id/recycle_view_dayli_food"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
 
@@ -194,12 +194,11 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
                     android:text="CÓ THỂ BẠN CHƯA BIẾT"
                     android:textColor="#000000"
-                    android:textSize="18sp"
+                    android:textSize="@dimen/sp16"
                     android:textStyle="bold" />
 
                 <LinearLayout

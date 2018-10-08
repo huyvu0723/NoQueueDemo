@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/pale_grey_two"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_cart"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp48"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_icon_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+
+                        <ImageView
+                            android:id="@+id/image_view_close_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_back" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:gravity="center_vertical"
+                        android:text="THẺ THÀNH VIÊN"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp15"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp25"
+                    android:layout_marginTop="@dimen/dp16"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/image_view_my_membership_card"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp176"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp24"
+                            android:layout_marginRight="@dimen/dp24"
+                            android:background="@drawable/background_member_card"
+                            android:scaleType="fitXY"
+                            app:riv_corner_radius="@dimen/dp10" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp145"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp40"
+                            android:layout_marginRight="@dimen/dp40"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/dp10">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_gravity="center"
+                                android:layout_weight="60"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/image_view_bar_code"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="64dp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="fitXY" />
+
+                                <TextView
+                                    android:id="@+id/text_view_bar_code"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="@dimen/dp10"
+                                    android:gravity="center"
+                                    android:letterSpacing="0.3"
+                                    android:text="VF123498"
+                                    android:textColor="@color/light_black"
+                                    android:textSize="@dimen/sp14" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_not_used_coupons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp16"
+                        android:textAllCaps="true"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/sp14"
+                        android:textStyle="bold"
+                        android:text="coupon chưa sử dụng" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycle_view_not_used_coupon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <TextView
+                        android:id="@+id/text_view_all_coupons"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/dp24"
+                        android:paddingTop="@dimen/dp24"
+                        android:text="Xem tất cả coupon"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp14"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp40"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginTop="@dimen/dp24"
+                android:background="@drawable/background_cart_price"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp16"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginTop="@dimen/dp20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:text="VietFood rewards"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_view_membership_card_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp4"
+                        android:textColor="@color/light_black"
+                        android:textSize="@dimen/sp14"
+                        android:text="Thành viên mới (Green)" />
+
+                    <TextView
+                        android:id="@+id/text_view_card_point"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="@dimen/sp18"
+                        android:textStyle="bold"
+                        android:text="120 điểm" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp24"
+                    android:layout_marginLeft="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp8"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/text_view_rank_1"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text="Green" />
+
+                        <TextView
+                            android:id="@+id/text_view_rank_2"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="60"
+                            android:text="Silver" />
+
+                        <TextView
+                            android:id="@+id/text_view_rank_3"
+                            android:layout_width="@dimen/dp0"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="20"
+                            android:text="Gold" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_point"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp8"
+                        android:background="@drawable/background_progress_bar_"
+                        android:progress="25"
+                        android:progressBackgroundTint="@color/pale_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_my_coupon_tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp1"
+                        android:background="@color/pale_grey"
+                        android:paddingTop="@dimen/dp24" />
+
+                    <com.ogaclejapan.smarttablayout.SmartTabLayout
+                        android:id="@+id/smart_tab_membership_card_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp48"
+                        android:background="@color/white"
+                        app:stl_clickable="true"
+                        app:stl_defaultTabBackground="?attr/selectableItemBackground"
+                        app:stl_defaultTabTextAllCaps="false"
+                        app:stl_defaultTabTextColor="@color/light_black"
+                        app:stl_defaultTabTextHorizontalPadding="@dimen/dp25"
+                        app:stl_defaultTabTextMinWidth="@dimen/dp0"
+                        app:stl_defaultTabTextSize="@dimen/sp14"
+                        app:stl_distributeEvenly="true"
+                        app:stl_dividerThickness="@dimen/dp0"
+                        app:stl_indicatorColor="@color/red"
+                        app:stl_indicatorCornerRadius="@dimen/dp1"
+                        app:stl_indicatorInterpolation="smart"
+                        app:stl_indicatorThickness="@dimen/dp2"
+                        app:stl_indicatorWidth="auto"
+                        app:stl_titleOffset="auto_center" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager_membership_card_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp200"
+                        android:layout_below="@id/view_pager_tab" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

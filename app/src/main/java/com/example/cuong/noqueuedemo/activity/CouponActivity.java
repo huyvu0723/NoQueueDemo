@@ -9,12 +9,10 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
-import com.example.cuong.noqueuedemo.adapter.CouponFragment;
+import com.example.cuong.noqueuedemo.fragment.CouponFragment;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
-
-import java.util.ArrayList;
 
 public class CouponActivity extends AppCompatActivity implements View.OnClickListener{
     private LinearLayout mLnlBack;

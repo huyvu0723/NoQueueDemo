@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,10 +15,11 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".activity.HomeActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -34,11 +34,10 @@
         <activity android:name=".activity.AboutUsActivity" />
         <activity android:name=".activity.ContactActivity" />
         <activity android:name=".activity.PolicyActivity" />
-        <activity android:name=".activity.CouponActivity"></activity>
+        <activity android:name=".activity.CouponActivity" />
         <activity android:name=".activity.CouponDetailActivity" />
-        <activity android:name=".activity.OrderHistoryActivity"></activity>
-        <activity android:name=".activity.OrderHistoryDetailActivity"></activity>
-
+        <activity android:name=".activity.OrderHistoryActivity" />
+        <activity android:name=".activity.OrderHistoryDetailActivity" />
 
         <meta-data
             android:name="com.facebook.accountkit.ApplicationName"
@@ -51,7 +50,6 @@
             android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
 
         <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
-
         <activity android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -62,6 +60,11 @@
                 <data android:scheme="@string/ak_login_protocol_scheme" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.MemberCardActivity" />
+        <activity android:name=".activity.PromotionActivity" />
+        <activity android:name=".activity.NoteActivity" />
+        <activity android:name=".activity.PaymentActivity" />
+        <activity android:name=".activity.OrderSuccessActivity"></activity>
     </application>
 
 </manifest>

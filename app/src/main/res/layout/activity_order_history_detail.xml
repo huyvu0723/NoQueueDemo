@@ -22,6 +22,7 @@
                 android:background="@color/white">
 
                 <LinearLayout
+                    android:id="@+id/linear_layout_icon_back"
                     android:layout_width="@dimen/dp64"
                     android:layout_height="match_parent"
                     android:gravity="center">

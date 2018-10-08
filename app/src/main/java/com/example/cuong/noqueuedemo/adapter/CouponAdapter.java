@@ -30,7 +30,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder
         this.mCouponList = mCouponList;
     }
 
-    interface OnClickCouponDetailCallBack {
+    public interface OnClickCouponDetailCallBack {
         void setOnClickCouponDetailCallBack(int position);
     }
 

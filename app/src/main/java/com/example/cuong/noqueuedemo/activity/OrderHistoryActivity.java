@@ -80,6 +80,12 @@ public class OrderHistoryActivity extends AppCompatActivity implements View.OnCl
 
         mOrderHistoryAdapter = new OrderHistoryAdapter(OrderHistoryActivity.this, mOrderHistoryList);
         mRecycleViewOrderHistory.setAdapter(mOrderHistoryAdapter);
+        mOrderHistoryAdapter.setmOnClickToOrderDetail(new OrderHistoryAdapter.OnClickToOrderDetail() {
+            @Override
+            public void setOnClickToOrderDetail(int position) {
+                OrderHistoryDetailActivity.intentToOrderHistoryDetailActivity(OrderHistoryActivity.this);
+            }
+        });
     }
 
     @Override

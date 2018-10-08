@@ -1,4 +1,4 @@
-package com.example.cuong.noqueuedemo.adapter;
+package com.example.cuong.noqueuedemo.fragment;
 
 import android.content.Context;
 import android.net.Uri;
@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.activity.CouponDetailActivity;
+import com.example.cuong.noqueuedemo.adapter.CouponAdapter;
 import com.example.cuong.noqueuedemo.model.Coupon;
 
 import java.util.ArrayList;
