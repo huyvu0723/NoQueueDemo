@@ -48,10 +48,16 @@
                     android:gravity="right">
 
                     <Button
-                        android:id="@+id/button_extra_close"
-                        android:layout_width="@dimen/dp24"
-                        android:layout_height="@dimen/dp24"
-                        android:background="@mipmap/ic_button_close" />
+                        android:id="@+id/button_done"
+                        android:layout_width="@dimen/dp64"
+                        android:layout_height="@dimen/dp32"
+                        android:layout_gravity="end|center"
+                        android:background="@drawable/background_checkout_orders"
+                        android:text="Xong"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+
                 </LinearLayout>
 
 
@@ -142,6 +148,7 @@
                         android:paddingTop="@dimen/dp16">
 
                         <ImageView
+                            android:id="@+id/image_view_decrease"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:src="@mipmap/ic_decrease" />
@@ -210,45 +217,42 @@
 
             </LinearLayout>
 
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp20"
+                android:background="@color/pale_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp17"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_view_item_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="98.000đ"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 
-    <LinearLayout
-        android:id="@+id/linear_layout_add_to_cart"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dp48"
-        android:layout_gravity="bottom"
-        android:background="@drawable/background_checkout_orders"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-
-        >
-
-        <TextView
-            android:id="@+id/text_view_total"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/dp18"
-            android:layout_marginLeft="@dimen/dp30"
-            android:text="98.000đ"
-            android:textColor="@color/white"
-            android:textSize="@dimen/sp14" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="right"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/dp30"
-                android:letterSpacing="0"
-                android:text="Thêm vào giỏ hàng"
-                android:textColor="@color/white"
-                android:textSize="@dimen/sp14"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </LinearLayout>
 
 </android.support.design.widget.CoordinatorLayout>

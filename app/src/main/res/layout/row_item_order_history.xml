@@ -37,8 +37,8 @@
 
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/image_view_picture"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="@dimen/dp72"
+                android:layout_height="@dimen/dp72"
                 android:src="@mipmap/ic_launcher"
                 app:riv_corner_radius="@dimen/dp5" />
 

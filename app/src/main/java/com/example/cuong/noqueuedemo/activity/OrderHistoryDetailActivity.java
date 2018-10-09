@@ -50,9 +50,9 @@ public class OrderHistoryDetailActivity extends AppCompatActivity implements Vie
 
     private void initialData() {
         mOrderDetailList = new ArrayList<>();
-        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà xối mỡ", "thêm 1 phần Canh ", 37000));
-        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà xối mỡ", "thêm 1 phần Canh ", 37000));
-        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà xối mỡ", "thêm 1 phần Canh ", 37000));
+        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.comchienlasen, "Cơm chiên xả", "thêm 1 phần Canh ", 37000));
+        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.phobo, "Phở bò", "thêm 1 phần Canh ", 37000));
+        mOrderDetailList.add(new OrderHistoryDetail(R.mipmap.thichbam, "Thịt bầm chưng", "thêm 1 phần Canh ", 37000));
 
         mOrderDetailAdapter = new OrderHistoryDetailAdapter(mOrderDetailList, OrderHistoryDetailActivity.this);
         mRecycleViewOrderDetail.setAdapter(mOrderDetailAdapter);

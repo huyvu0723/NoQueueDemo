@@ -68,9 +68,9 @@ public class MemberCardActivity extends AppCompatActivity implements View.OnClic
 
         mCouponList = new ArrayList<>();
         mCouponList.add(new Coupon("Giảm 30% cho khi gọi nhóm 4 người",
-                R.mipmap.ic_launcher, "30/10/2018"));
+                R.mipmap.ic_coupon1, "30/10/2018"));
         mCouponList.add(new Coupon("Giảm 30% cho khi gọi nhóm 4 người",
-                R.mipmap.ic_launcher, "30/10/2018"));
+                R.mipmap.ic_coupon2, "30/10/2018"));
 
         mCouponAdapter = new CouponAdapter(MemberCardActivity.this, mCouponList);
         mRecyclerViewCoupons.setAdapter(mCouponAdapter);

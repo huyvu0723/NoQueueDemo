@@ -57,16 +57,16 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initalData(){
         mFoodList = new ArrayList<>();
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà kho", "thêm 1 canh", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà kho", "thêm 1 canh", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_launcher, "Cơm gà kho", "thêm 1 canh", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.comchienlasen, "Cơm chiên lá sen", "thêm 1 canh", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.comchienxa, "Cơm chiên xả", "thêm 1 canh", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.phobo, "Phở bò", "thêm ớt", 35000));
 
         mCartAdapter = new CartAdapter(mFoodList, CartActivity.this);
         mRecycleViewCart.setAdapter(mCartAdapter);
         mCartAdapter.setmOnClickToFoodItem(new CartAdapter.OnClickToFoodItem() {
             @Override
             public void setOnClickToItem(int position) {
-
+                EditOrderDetailActivity.intentToEditOrderDetailActivity(CartActivity.this);
             }
         });
     }
@@ -77,7 +77,13 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.linear_layout_coupon:
                 PromotionActivity.intentToPromotionActivity(CartActivity.this);
                 break;
+            case R.id.edit_text_add_promotion_code:
+                PromotionActivity.intentToPromotionActivity(CartActivity.this);
+                break;
             case R.id.linear_layout_note:
+                NoteActivity.intentToNoteActivity(CartActivity.this);
+                break;
+            case R.id.edit_text_get_note:
                 NoteActivity.intentToNoteActivity(CartActivity.this);
                 break;
             case R.id.text_view_edit_payment:

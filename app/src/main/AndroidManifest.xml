@@ -16,18 +16,19 @@
         <activity
             android:name=".activity.HomeActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".activity.SplashActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
+        <activity android:name=".activity.ProfileActivity" />
+        <activity android:name=".activity.OrderActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.SplashActivity"></activity>
-        <activity
-            android:name=".activity.LoginActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
-        <activity android:name=".activity.ProfileActivity" />
-        <activity android:name=".activity.OrderActivity" />
         <activity android:name=".activity.CartActivity" />
         <activity android:name=".activity.CustomerInfoActivity" />
         <activity android:name=".activity.ScanQRActivity" />
@@ -64,7 +65,8 @@
         <activity android:name=".activity.PromotionActivity" />
         <activity android:name=".activity.NoteActivity" />
         <activity android:name=".activity.PaymentActivity" />
-        <activity android:name=".activity.OrderSuccessActivity"></activity>
+        <activity android:name=".activity.OrderSuccessActivity" />
+        <activity android:name=".activity.EditOrderDetailActivity"></activity>
     </application>
 
 </manifest>
