@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/dp10"
     android:paddingLeft="@dimen/dp20"
+    android:paddingTop="@dimen/dp20"
     android:paddingRight="@dimen/dp20"
-    android:paddingTop="@dimen/dp20">
+    android:paddingBottom="@dimen/dp10">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -35,8 +35,8 @@
                     android:ellipsize="end"
                     android:letterSpacing="0"
                     android:lineSpacingExtra="@dimen/sp26"
-                    android:maxLines="1"
                     android:maxWidth="@dimen/dp290"
+                    android:maxLines="1"
                     android:text="Gà xào lá giang"
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp18"
@@ -138,8 +138,8 @@
                         android:layout_width="@dimen/dp50"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingBottom="@dimen/dp20"
-                        android:paddingTop="@dimen/dp16">
+                        android:paddingTop="@dimen/dp16"
+                        android:paddingBottom="@dimen/dp20">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -162,8 +162,8 @@
                         android:layout_width="@dimen/dp50"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingBottom="@dimen/dp20"
-                        android:paddingTop="@dimen/dp16">
+                        android:paddingTop="@dimen/dp16"
+                        android:paddingBottom="@dimen/dp20">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -185,8 +185,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/dp20"
                 android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
                 android:visibility="visible">
 
                 <TextView

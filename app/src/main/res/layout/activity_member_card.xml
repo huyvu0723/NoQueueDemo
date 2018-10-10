@@ -62,8 +62,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/dp25"
                     android:layout_marginTop="@dimen/dp16"
+                    android:layout_marginBottom="@dimen/dp25"
                     android:orientation="vertical">
 
                     <FrameLayout
@@ -137,11 +137,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/dp16"
+                        android:text="coupon chưa sử dụng"
                         android:textAllCaps="true"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14"
-                        android:textStyle="bold"
-                        android:text="coupon chưa sử dụng" />
+                        android:textStyle="bold" />
 
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/recycle_view_not_used_coupon"
@@ -155,8 +155,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingBottom="@dimen/dp24"
                         android:paddingTop="@dimen/dp24"
+                        android:paddingBottom="@dimen/dp24"
                         android:text="Xem tất cả coupon"
                         android:textColor="@color/red"
                         android:textSize="@dimen/sp14"
@@ -168,20 +168,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/dp40"
                 android:layout_marginLeft="@dimen/dp16"
-                android:layout_marginRight="@dimen/dp16"
                 android:layout_marginTop="@dimen/dp24"
+                android:layout_marginRight="@dimen/dp16"
+                android:layout_marginBottom="@dimen/dp40"
                 android:background="@drawable/background_cart_price"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/dp16"
                     android:layout_marginLeft="@dimen/dp20"
-                    android:layout_marginRight="@dimen/dp20"
                     android:layout_marginTop="@dimen/dp20"
+                    android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp16"
                     android:orientation="vertical">
 
                     <TextView
@@ -198,26 +198,26 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/dp4"
+                        android:text="Thành viên mới (Green)"
                         android:textColor="@color/light_black"
-                        android:textSize="@dimen/sp14"
-                        android:text="Thành viên mới (Green)" />
+                        android:textSize="@dimen/sp14" />
 
                     <TextView
                         android:id="@+id/text_view_card_point"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:text="120 điểm"
                         android:textColor="@color/red"
                         android:textSize="@dimen/sp18"
-                        android:textStyle="bold"
-                        android:text="120 điểm" />
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/dp24"
                     android:layout_marginLeft="@dimen/dp20"
                     android:layout_marginRight="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp24"
                     android:orientation="vertical">
 
                     <LinearLayout

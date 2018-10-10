@@ -123,8 +123,8 @@
                     <TextView
                         android:layout_width="@dimen/dp250"
                         android:layout_height="wrap_content"
-                        android:paddingBottom="@dimen/dp16"
                         android:paddingTop="@dimen/dp16"
+                        android:paddingBottom="@dimen/dp16"
                         android:text="Nhập mã bàn hoặc scan QR code"
                         android:textColor="@color/silver"
                         android:textSize="@dimen/sp14" />
@@ -132,8 +132,8 @@
                     <View
                         android:layout_width="@dimen/dp1"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/dp8"
                         android:layout_marginTop="@dimen/dp8"
+                        android:layout_marginBottom="@dimen/dp8"
                         android:background="@color/silver"></View>
 
                     <LinearLayout
@@ -162,8 +162,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="16dp"
                     android:text="MÓN NGON HÔM NAY"
                     android:textColor="#000000"
                     android:textSize="@dimen/sp16"
@@ -194,8 +194,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="16dp"
                     android:text="CÓ THỂ BẠN CHƯA BIẾT"
                     android:textColor="#000000"
                     android:textSize="@dimen/sp16"

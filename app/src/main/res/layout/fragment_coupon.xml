@@ -13,7 +13,6 @@
         android:layout_gravity="center"
         android:clipToPadding="false"
         android:paddingBottom="@dimen/dp50"
-        android:scrollbars="none"
-        ></android.support.v7.widget.RecyclerView>
+        android:scrollbars="none"></android.support.v7.widget.RecyclerView>
 
 </FrameLayout>

@@ -36,13 +36,13 @@
 
 
                 <TextView
-                    android:gravity="center_vertical"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:gravity="center_vertical"
                     android:text="ĐƠN HÀNG #0908765BMW"
                     android:textColor="@color/red"
                     android:textSize="@dimen/sp15"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -65,10 +65,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp112"
                         android:background="@drawable/background_cart_price"
-                        android:paddingBottom="@dimen/dp15"
                         android:paddingLeft="@dimen/dp30"
+                        android:paddingTop="@dimen/dp15"
                         android:paddingRight="@dimen/dp30"
-                        android:paddingTop="@dimen/dp15">
+                        android:paddingBottom="@dimen/dp15">
 
                         <ImageView
                             android:id="@+id/image_view_bar_code"
@@ -171,8 +171,8 @@
                 <View
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/dp1"
-                    android:layout_marginBottom="@dimen/dp16"
                     android:layout_marginTop="@dimen/dp20"
+                    android:layout_marginBottom="@dimen/dp16"
                     android:background="@color/light_grey_2"></View>
 
                 <LinearLayout
@@ -202,16 +202,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/light_grey"
-                android:paddingBottom="@dimen/dp22"
                 android:paddingLeft="@dimen/dp16"
+                android:paddingTop="@dimen/dp22"
                 android:paddingRight="@dimen/dp16"
-                android:paddingTop="@dimen/dp22">
+                android:paddingBottom="@dimen/dp22">
 
                 <LinearLayout
-                    android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_cart_price"
+                    android:orientation="vertical"
                     android:padding="@dimen/dp14">
 
                     <LinearLayout
@@ -238,9 +238,9 @@
 
 
                     <LinearLayout
-                        android:layout_marginTop="@dimen/dp10"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -261,9 +261,9 @@
 
 
                     <LinearLayout
-                        android:layout_marginTop="@dimen/dp10"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -283,9 +283,9 @@
                     </LinearLayout>
 
                     <View
-                        android:layout_margin="@dimen/dp10"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp1"
+                        android:layout_margin="@dimen/dp10"
                         android:background="@color/grey"></View>
 
 

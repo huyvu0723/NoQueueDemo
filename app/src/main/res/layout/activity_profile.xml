@@ -73,14 +73,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp16"
-                android:layout_marginRight="@dimen/dp16"
                 android:layout_marginTop="@dimen/dp22"
+                android:layout_marginRight="@dimen/dp16"
                 android:background="@drawable/background_profile"
                 android:orientation="horizontal"
-                android:paddingBottom="@dimen/dp20"
                 android:paddingLeft="@dimen/dp20"
-                android:paddingRight="@dimen/dp10"
                 android:paddingTop="@dimen/dp20"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp20"
                 android:weightSum="10">
 
                 <LinearLayout
@@ -140,8 +140,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp16"
-                android:layout_marginRight="@dimen/dp16"
                 android:layout_marginTop="@dimen/dp8"
+                android:layout_marginRight="@dimen/dp16"
                 android:background="@drawable/background_profile"
                 android:orientation="vertical">
 
@@ -150,10 +150,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -187,10 +187,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -224,10 +224,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -261,10 +261,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -298,10 +298,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -333,10 +333,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:paddingBottom="@dimen/dp18"
                     android:paddingLeft="@dimen/dp18"
+                    android:paddingTop="@dimen/dp18"
                     android:paddingRight="@dimen/dp10"
-                    android:paddingTop="@dimen/dp18">
+                    android:paddingBottom="@dimen/dp18">
 
                     <ImageView
                         android:layout_width="@dimen/dp24"
@@ -392,8 +392,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:paddingBottom="@dimen/dp24"
                     android:paddingTop="@dimen/dp24"
+                    android:paddingBottom="@dimen/dp24"
                     android:text="@string/title_logout"
                     android:textColor="@color/red"
                     android:textSize="@dimen/sp14"

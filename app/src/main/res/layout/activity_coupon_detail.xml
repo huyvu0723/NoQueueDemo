@@ -68,25 +68,25 @@
                     android:id="@+id/text_view_coupon_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/dp8"
                     android:layout_marginLeft="@dimen/dp24"
-                    android:layout_marginRight="@dimen/dp24"
                     android:layout_marginTop="@dimen/dp24"
+                    android:layout_marginRight="@dimen/dp24"
+                    android:layout_marginBottom="@dimen/dp8"
+                    android:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietFood. Không áp dụng cùng chương trình khuyến mãi khác."
                     android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp22"
-                    android:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietFood. Không áp dụng cùng chương trình khuyến mãi khác." />
+                    android:textSize="@dimen/sp22" />
 
                 <TextView
                     android:id="@+id/text_view_coupon_expired_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="100dp"
                     android:layout_marginLeft="@dimen/dp24"
                     android:layout_marginRight="@dimen/dp24"
+                    android:layout_marginBottom="100dp"
                     android:lineSpacingExtra="@dimen/sp22"
+                    android:text="Hạn sử dụng: 12/08/2018"
                     android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp18"
-                    android:text="Hạn sử dụng: 12/08/2018" />
+                    android:textSize="@dimen/sp18" />
 
             </LinearLayout>
 
@@ -98,9 +98,9 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp48"
         android:layout_gravity="bottom"
-        android:layout_marginBottom="@dimen/dp16"
         android:layout_marginLeft="@dimen/dp32"
         android:layout_marginRight="@dimen/dp32"
+        android:layout_marginBottom="@dimen/dp16"
         android:background="@drawable/background_checkout_orders"
         android:gravity="center"
         android:visibility="gone">

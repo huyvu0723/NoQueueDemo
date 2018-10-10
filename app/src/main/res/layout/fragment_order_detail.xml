@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/dp10"
     android:paddingLeft="@dimen/dp20"
+    android:paddingTop="@dimen/dp20"
     android:paddingRight="@dimen/dp20"
-    android:paddingTop="@dimen/dp20">
-</android.support.design.widget.CoordinatorLayout>
+    android:paddingBottom="@dimen/dp10"></android.support.design.widget.CoordinatorLayout>

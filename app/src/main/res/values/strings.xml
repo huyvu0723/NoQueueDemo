@@ -4,7 +4,7 @@
     <string name="FACEBOOK_APP_ID">1844297638951342</string>
     <string name="ACCOUNT_KIT_CLIENT_TOKEN">dffd34885e71346417fe3f25be3d676f</string>
     <string name="ak_login_protocol_scheme">akdffd34885e71346417fe3f25be3d676f</string>
-    <string name="action_login_by_phone">Đăng nhập bằng SĐT</string>
+    <string name="action_login_by_phone">Đăng nhập bằng Số Điện Thoại</string>
     <string name="action_login_by_facebook">Đăng nhập bằng Facebook</string>
     <string name="action_personal_info">Thông tin cá nhân</string>
     <string name="action_my_coupons">Coupon của tôi</string>
@@ -25,6 +25,6 @@
     <string name="msg_voucher">Bạn có mã giảm giá? Nhập tại đây.</string>
     <string name="msg_notes">Bạn có muốn dặn dò gì không?</string>
     <string name="title_activity_order_history">OrderHistoryActivity</string>
-
+    <string name="text_button_refresh">Bạn có chắc muốn Làm mới giỏ hàng?\n Chức năng này sẽ xoá tất cả món ăn đã chọn trước đó.  </string>
 
 </resources>
