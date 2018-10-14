@@ -72,7 +72,7 @@
                     android:layout_marginTop="@dimen/dp24"
                     android:layout_marginRight="@dimen/dp24"
                     android:layout_marginBottom="@dimen/dp8"
-                    android:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietFood. Không áp dụng cùng chương trình khuyến mãi khác."
+                    android:text="Giảm giá 25% trên tất cả đơn hàng đặt hàng online thông qua ứng dụng VietCoffee. Không áp dụng cùng chương trình khuyến mãi khác."
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp22" />
 

@@ -131,7 +131,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp5"
-                        android:text="VIETFOOD30"
+                        android:text="VIETCOFFEE30"
                         android:textColor="@color/light_black" />
 
                     <TextView
@@ -147,7 +147,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp5"
-                        android:text="Đừng bỏ hành nha"
+                        android:text="Ít đá giúp em nha"
                         android:textColor="@color/light_black" />
 
                     <TextView

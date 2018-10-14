@@ -49,35 +49,48 @@ public class OrderHistoryActivity extends AppCompatActivity implements View.OnCl
     private void initialData() {
         mOrderHistoryList = new ArrayList<>();
         ArrayList<OrderDetail> orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Cua chiên bọt", 1));
-        orderDetailList.add(new OrderDetail("Thịt kho tàu", 2));
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.cualotchienbot, orderDetailList, 95000, 10));
+                R.mipmap.ic_1, orderDetailList, 95000, 10));
 
         orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Gọi cuốn", 1));
-        orderDetailList.add(new OrderDetail("Thịt kho tàu", 2));
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.goicuon, orderDetailList, 95000, 10));
+                R.mipmap.ic_8, orderDetailList, 95000, 10));
 
         orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Ngêu hấp xả", 1));
-        orderDetailList.add(new OrderDetail("Thịt kho tàu", 2));
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.ngeu, orderDetailList, 95000, 10));
+                R.mipmap.ic_3, orderDetailList, 95000, 10));
 
         orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Phở gà miền tây", 1));
-        orderDetailList.add(new OrderDetail("Thịt kho tàu", 2));
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.phoga, orderDetailList, 95000, 10));
+                R.mipmap.ic_4, orderDetailList, 95000, 10));
 
         orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Phở hải sản", 1));
-        orderDetailList.add(new OrderDetail("Thịt kho tàu", 2));
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.phohaisan, orderDetailList, 95000, 10));
+                R.mipmap.ic_5, orderDetailList, 95000, 10));
 
+        orderDetailList = new ArrayList<>();
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
+        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
+                R.mipmap.ic_6, orderDetailList, 95000, 10));
+
+        orderDetailList = new ArrayList<>();
+        orderDetailList.add(new OrderDetail("Cà phê đá", 1));
+        orderDetailList.add(new OrderDetail("Cà phê sữa", 2));
+        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
+                R.mipmap.ic_7, orderDetailList, 95000, 10));
+
+        orderDetailList = new ArrayList<>();
         mOrderHistoryAdapter = new OrderHistoryAdapter(OrderHistoryActivity.this, mOrderHistoryList);
         mRecycleViewOrderHistory.setAdapter(mOrderHistoryAdapter);
         mOrderHistoryAdapter.setmOnClickToOrderDetail(new OrderHistoryAdapter.OnClickToOrderDetail() {

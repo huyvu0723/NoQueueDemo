@@ -51,12 +51,12 @@ public class FoodFragment extends Fragment {
 
     private void initialData(){
         mFoodList = new ArrayList<>();
-        mFoodList.add(new Food(R.mipmap.comchienxa, "Cơm chiên xả", 30000));
-        mFoodList.add(new Food(R.mipmap.phohaisan, "Phở hải sản", 30000));
-        mFoodList.add(new Food(R.mipmap.thichbam, "Thịt bầm chưng", 30000));
-        mFoodList.add(new Food(R.mipmap.goicuon, "Gỏi cuốn", 30000));
-        mFoodList.add(new Food(R.mipmap.cachienxu, "Cá chiên xù", 30000));
-        mFoodList.add(new Food(R.mipmap.bunbohue, "Bún bò huế", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_1, "Cà phê đá", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_2, "Cà phê sữa", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_3, "Cà phê đá xây", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_4, "Latte coffee", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_5, "Matcha coffee", 30000));
+        mFoodList.add(new Food(R.mipmap.ic_6, "Trà sữa", 30000));
 
         mOrderAdapter = new OrderAdapter(mFoodList, getActivity());
         mRecycleViewFood.setAdapter(mOrderAdapter);

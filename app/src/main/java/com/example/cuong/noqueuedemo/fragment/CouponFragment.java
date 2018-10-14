@@ -51,11 +51,11 @@ public class CouponFragment extends Fragment {
 
     private void intialData(){
         mCouponList = new ArrayList<>();
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_coupon1,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_coupon2,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_coupon1,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_coupon2,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_coupon1,"30/10/2018"));
+        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_12,"30/10/2018"));
+        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_13,"30/10/2018"));
+        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_14,"30/10/2018"));
+        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_15,"30/10/2018"));
+        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_11,"30/10/2018"));
 
         mCouponAdapter = new CouponAdapter(getContext(), mCouponList);
         mRecycleViewCoupons.setAdapter(mCouponAdapter);

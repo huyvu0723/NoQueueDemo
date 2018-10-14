@@ -58,7 +58,7 @@
                 android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:layout_weight="80"
-                android:text="\@VietFood"
+                android:text="\@VietCoffee"
                 android:textColor="@color/light_black"
                 android:textSize="@dimen/sp14" />
 
@@ -118,7 +118,7 @@
                 android:layout_width="@dimen/dp0"
                 android:layout_height="wrap_content"
                 android:layout_weight="80"
-                android:text="contact@vietfood.com"
+                android:text="contact@vietcoffee.com"
                 android:textColor="@color/light_black"
                 android:textSize="@dimen/sp14" />
 

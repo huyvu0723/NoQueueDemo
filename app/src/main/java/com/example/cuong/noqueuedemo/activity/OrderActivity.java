@@ -45,10 +45,10 @@ public class OrderActivity extends AppCompatActivity implements View.OnClickList
     private void initialData() {
 
         FragmentPagerItems.Creator creator = FragmentPagerItems.with(getApplicationContext());
-        creator.add("Cơm", FoodFragment.class);
-        creator.add("Canh", FoodFragment.class);
-        creator.add("Xào", FoodFragment.class);
-        creator.add("Kho", FoodFragment.class);
+        creator.add("Cà phê", FoodFragment.class);
+        creator.add("Đá xây", FoodFragment.class);
+        creator.add("Trà sữa", FoodFragment.class);
+        creator.add("Đá viên", FoodFragment.class);
         creator.add("Món phụ", FoodFragment.class);
 
         mAdapter = new FragmentPagerItemAdapter(getSupportFragmentManager(),

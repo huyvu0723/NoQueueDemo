@@ -39,7 +39,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="QUY ĐỊNH CỦA VIỆT FOOD"
+                    android:text="QUY ĐỊNH CỦA VIỆT COFFEE"
                     android:textColor="@color/red"
                     android:textSize="@dimen/sp15"
 
@@ -56,7 +56,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tại Việt Food, chúng tôi cam kết tuân thủ việc bảo vệ quyền riêng tư và bảo mật thông tin cá nhân (gọi tắt là PII) mà bạn cung cấp. Thông tin cá nhân có thể là tên, địa chỉ, điện thoại hoặc địa chỉ email.
+                    android:text="Tại Việt Coffee, chúng tôi cam kết tuân thủ việc bảo vệ quyền riêng tư và bảo mật thông tin cá nhân (gọi tắt là PII) mà bạn cung cấp. Thông tin cá nhân có thể là tên, địa chỉ, điện thoại hoặc địa chỉ email.
 
 Chính sách riêng tư này giải thích về cách thức chúng tôi xử lý và bảo vệ thông tin cá nhân theo qui định được chấp nhận bởi hiệp hội bảo vệ chính sách cá nhân. Những chính sách này được điều chỉnh vào ngày 18 tháng 3 năm 2011.
 

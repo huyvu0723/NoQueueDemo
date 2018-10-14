@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginBottom="16dp"
-                    android:text="MÓN NGON HÔM NAY"
+                    android:text="MÓN MỚI"
                     android:textColor="#000000"
                     android:textSize="@dimen/sp16"
                     android:textStyle="bold" />
@@ -206,7 +206,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
                     android:layout_marginRight="@dimen/dp16"
-                    android:background="@drawable/background_cart_price"
                     android:orientation="vertical">
 
                     <android.support.v7.widget.RecyclerView

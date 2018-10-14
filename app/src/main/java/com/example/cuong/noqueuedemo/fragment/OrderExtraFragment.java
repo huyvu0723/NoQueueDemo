@@ -58,8 +58,8 @@ public class OrderExtraFragment extends BottomSheetDialogFragment implements Vie
 
     private void initialData() {
         mExtraList = new ArrayList<>();
-        mExtraList.add(new ProductExtra(1, "Cơm thêm", 5000, false));
-        mExtraList.add(new ProductExtra(1, "Canh", 5000, false));
+        mExtraList.add(new ProductExtra(1, "Thêm đá", 5000, false));
+        mExtraList.add(new ProductExtra(1, "Thêm đường", 5000, false));
 
         mExtraAdapter = new ExtraAdapter(mExtraList, getActivity());
         mRecycleViewExtra.setAdapter(mExtraAdapter);

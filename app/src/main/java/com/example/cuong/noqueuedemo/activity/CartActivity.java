@@ -57,9 +57,9 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initalData(){
         mFoodList = new ArrayList<>();
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.comchienlasen, "Cơm chiên lá sen", "thêm 1 canh", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.comchienxa, "Cơm chiên xả", "thêm 1 canh", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.phobo, "Phở bò", "thêm ớt", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_1, "Cà phê sữa", "thêm 10% sữa", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_4, "Cà phê đá", "thêm 10% đường", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_3, "Cà phê đen", "thêm đá", 35000));
 
         mCartAdapter = new CartAdapter(mFoodList, CartActivity.this);
         mRecycleViewCart.setAdapter(mCartAdapter);
