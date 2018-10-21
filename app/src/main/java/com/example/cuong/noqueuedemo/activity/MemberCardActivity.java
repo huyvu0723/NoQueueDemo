@@ -67,10 +67,10 @@ public class MemberCardActivity extends AppCompatActivity implements View.OnClic
 //        mImgBarCode.setImageBitmap(bitmapBarCode);
 
         mCouponList = new ArrayList<>();
-        mCouponList.add(new Coupon("Giảm 30% cho khi gọi nhóm 4 người",
-                R.mipmap.ic_13, "30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% cho khi gọi nhóm 4 người",
-                R.mipmap.ic_14, "30/10/2018"));
+        mCouponList.add(new Coupon("MỪNG NGÀY PHỤ NỮ VIỆT NAM: SWEET SET & FREE UPSIZE",
+                R.mipmap.ic_new2, "30/10/2018"));
+        mCouponList.add(new Coupon("HAPPY LUNCH - BỮA TRƯA VUI VẺ",
+                R.mipmap.ic_new7, "30/10/2018"));
 
         mCouponAdapter = new CouponAdapter(MemberCardActivity.this, mCouponList);
         mRecyclerViewCoupons.setAdapter(mCouponAdapter);

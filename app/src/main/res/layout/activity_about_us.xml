@@ -58,13 +58,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="@dimen/dp16"
-                    android:text="Thương hiệu Việt Coffee từ lâu đã trở thành điểm đến quen thuộc của những người yêu cà phê truyền thống Việt Nam. Nét đặc sắc khó quên của Việt Coffee được tạo nên bởi cái hồn trong mỗi ly cà phê, đúc kết từ niềm đam mê khám phá hương vị ba miền của người sáng lập và lưu giữ nét văn hoá trong mỗi tác phẩm. Việt Coffee luôn chinh phục khách hàng dù là khó tính nhất bằng những tách cà phê rất riêng từ dân dã như cà phê đen, cà phê sữa, moka, matcha,… đến các ly sang trọng và tinh tế như trà sữa, …
+                    android:text="Được xây dựng từ tháng 9 năm 2018 tại TP. HCM, Việt Nam, SoT là cộng đồng tin cậy cho mọi người có thể tìm kiếm và gọi món các địa điểm ăn uống cà phê tại Việt Nam - từ website hoặc ứng dụng di động. Tất cả thành viên từ Bắc đến Nam, SoT kết nối những thực khách đến với các địa điểm ăn uống lớn nhỏ cả đất nước.
 
-Thực khách có thể tự mình khám phá nét duyên của hương vị Việt Nam qua những ly cà phê truyền thống cũng như những món được biến tấu sáng tạo từ những nguyên liệu vốn đơn giản và thuần Việt tại Việt Coffee.
-
-Trong suốt hơn 30 năm hình thành và phát triển, từ niềm đam mê cà phê dân tộc, hệ thống chuỗi cửa hãng cà phê Việt Coffee không ngừng mở rộng và phát triển thêm nhiều chi nhánh mới với mong muốn mong muốn mang đến khách hàng những tách cà phê nồng nàn hương vị truyền thống nhưng cũng rất riêng, rất Việt Nam.
-
-"
+Đến thời điểm hiện tại, SoT với hàng trăm ngàn địa điểm và hàng trăm khách hàng, đối tác tại Việt Nam, ở hầu hết các tỉnh thành. SoT là cách dễ nhất để bạn có thể tìm kiếm và lựa chọn địa điểm tốt nhất cho mình và bạn bè."
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp16" />
             </LinearLayout>

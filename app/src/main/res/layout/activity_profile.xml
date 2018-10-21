@@ -105,22 +105,6 @@
                         android:textSize="@dimen/sp18"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp16"
-                        android:text="Tài khoản"
-                        android:textColor="@color/light_black"
-                        android:textSize="@dimen/sp14" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/dp4"
-                        android:text="120.000 đ"
-                        android:textColor="@color/red"
-                        android:textSize="@dimen/sp18"
-                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout

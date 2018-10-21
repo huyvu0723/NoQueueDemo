@@ -39,7 +39,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="QUY ĐỊNH CỦA VIỆT COFFEE"
+                    android:text="QUY ĐỊNH CỦA SOT"
                     android:textColor="@color/red"
                     android:textSize="@dimen/sp15"
 
@@ -56,33 +56,15 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tại Việt Coffee, chúng tôi cam kết tuân thủ việc bảo vệ quyền riêng tư và bảo mật thông tin cá nhân (gọi tắt là PII) mà bạn cung cấp. Thông tin cá nhân có thể là tên, địa chỉ, điện thoại hoặc địa chỉ email.
+                    android:text="App SoT (Scan on Table) là tài sản của Công ty Cổ phần SoT (SoT CORP.) Với việc sử dụng các thông tin, dịch vụ, sản phẩm trên ứng dụng SoT, đồng nghĩa với việc bạn đã chấp nhận hoàn toàn các quy định sử dụng ứng dụng dưới đây.
 
-Chính sách riêng tư này giải thích về cách thức chúng tôi xử lý và bảo vệ thông tin cá nhân theo qui định được chấp nhận bởi hiệp hội bảo vệ chính sách cá nhân. Những chính sách này được điều chỉnh vào ngày 18 tháng 3 năm 2011.
+Mời bạn vui lòng đọc kỹ các quy định sử dụng ứng dụng dưới đây trước khi quyết định sử dụng thông tin, dịch vụ, sản phẩm của chúng tôi.
 
-Chúng tôi cam kết bảo mật thông tin cho dù có thay đổi hay sửa đổi chính sách này bất luận thời gian và lý do. Bất kỳ sự thay đổi về chính sách bảo vệ thông tin cá nhân sẽ được thông báo sớm trước khi thực thi.
+Đăng ký sử dụng và đăng nhập tài khoản: Khi đăng ký sử dụng tài khoản trên SOT, bạn cần cung cấp cho ứng dụng các thông tin cá nhân chính xác, đầy đủ và mới nhất. Khi chọn mật khẩu cho tài khoản truy nhập, hãy chọn mật khẩu theo cách mà không ai có thể dễ dàng đoán được.
 
-Mọi nỗ lực giữ vững dịch vụ không đơn thuần là chúng tôi chỉ tạo hoặc lưu trữ thông tin khách hàng. Chúng tôi chỉ lưu lại PII và những thông khác cần để trao đổi thông tin với bạn.
+Quyền thu thập và sử dụng thông tin: Khi bạn truy cập và sử dụng ứng dụng SoT có thể thu thập và lưu trữ các thông tin như các số liệu thống kê quá trình truy cập, các thông tin cá nhân cung cấp cho SoT khi đăng ký… Các thông tin cá nhân khách hàng cung cấp bao gồm họ tên, số điện thoại, địa chỉ email, địa chỉ chỗ ở… Chúng tôi có thể sử dụng các thông tin này vào việc lập kế hoạch, nghiên cứu, thiết kế và tuyên truyền các dịch vụ hoặc cung cấp thông tin cho các cơ quan pháp luật theo yêu cầu của Luật pháp hoặc của Toà án.
 
-Chúng tôi sử dụng thông tin của bạn như thế nào?
-
-Chúng tôi chỉ sử dụng PII để trả lời và yêu cầu cho dịch vụ và sản phẩm của chúng tôi.
-
-Chúng tôi chia sẻ thông tin cuả bạn với ai?
-
-Chúng tôi không tiết lộ thông tin khách hàng cho bất kỳ ai.
-
-Bạn điều chỉnh và truy cập thông tin của bạn như thế nào?
-
-Chúng tôi hi vọng những khách ghé thăm website và có thay đổi thông tin lưu trữ và sử dụng PII.
-
-Chúng tôi bảo vệ thông tin cá nhân bạn như thế nào?
-
-Để đảm bảo độ tin cậy PII, chúng tôi đã sử dụng những kỹ thuật bảo mật cùng thao tác kiểm tra và cập nhật thường xuyên.
-
-Chúng tôi lưu trữ thông tin gì?
-
-Với nỗ lực duy trì dịch vụ của chúng tôi đơn giản tối đa, chúng tôi không tạo, sử dụng hoặc lưu trữ thông tin của khách hàng ngoài mục đích gửi các thông tin hấp dẫn (xem chi tiết dưới đây). Chúng tôi chỉ sử dụng PII trả lời và yêu cầu cho dịch vụ và sản phẩm của chúng tôi. Chúng tôi mô tả cụ thể thông tin yêu cầu gửi tới bạn của những dịch vụ hay sản phẩm bạn yêu cầu."
+Quy định về nội dung thông tin trên website: Người sử dụng chịu trách nhiệm về bất cứ nội dung thông tin gửi lên hoặc truyền đi qua trang ứng dụng của SoT và không được phép hoặc cho phép người khác tạo ra bất cứ sự khó chịu, phiền toái, quấy rầy nào đối với SoT cũng như đối với bất kỳ khách hàng hoặc người sử dụng khác."
 
                     android:textColor="@color/light_black"
                     android:textSize="@dimen/sp16" />

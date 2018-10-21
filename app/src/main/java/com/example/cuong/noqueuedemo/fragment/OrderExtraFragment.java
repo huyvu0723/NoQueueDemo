@@ -24,7 +24,7 @@ public class OrderExtraFragment extends BottomSheetDialogFragment implements Vie
     private RecyclerView mRecycleViewExtra;
     private ExtraAdapter mExtraAdapter;
     private ArrayList<ProductExtra> mExtraList;
-    private LinearLayout mLnlAddToCart;
+    private LinearLayout mLnlAddToCart, mLnlAdd, mLnlSubstract;
 
 
     @Override
@@ -53,6 +53,9 @@ public class OrderExtraFragment extends BottomSheetDialogFragment implements Vie
         mRecycleViewExtra.setHasFixedSize(true);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
         mRecycleViewExtra.setLayoutManager(layoutManager);
+        mLnlAdd = getView().findViewById(R.id.linear_layout_plus_green);
+        mLnlSubstract = getView().findViewById(R.id.linear_layout_decrease_green);
+
         initialData();
     }
 

@@ -16,11 +16,7 @@
         <activity
             android:name=".activity.HomeActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".activity.SplashActivity"></activity>
         <activity
@@ -28,7 +24,13 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity android:name=".activity.ProfileActivity" />
         <activity android:name=".activity.OrderActivity"></activity>
-        <activity android:name=".activity.CartActivity" />
+        <activity android:name=".activity.CartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".activity.CustomerInfoActivity" />
         <activity android:name=".activity.ScanQRActivity" />
         <activity android:name=".activity.AboutUsActivity" />

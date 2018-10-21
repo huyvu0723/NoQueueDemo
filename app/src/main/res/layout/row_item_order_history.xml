@@ -47,8 +47,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/dp12"
-                android:text="1 x Cơm gà chiên
-2 x Bánh mì thịt" />
+                android:text="1 x Trà xanh đá xay
+2 x Raisin Danish" />
 
             <LinearLayout
                 android:layout_width="match_parent"

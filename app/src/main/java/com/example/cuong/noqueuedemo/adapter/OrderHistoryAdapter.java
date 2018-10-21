@@ -14,10 +14,11 @@ import android.widget.TextView;
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.model.OrderDetail;
 import com.example.cuong.noqueuedemo.model.OrderHistory;
+import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.ArrayList;
 
-public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder>{
+public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapter.ViewHolder> {
     private Context mContext;
     private ArrayList<OrderHistory> mOrderHistoryList;
     private OnClickToOrderDetail mOnClickToOrderDetail;
@@ -31,7 +32,7 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
         this.mOrderHistoryList = mOrderHistoryList;
     }
 
-    public interface OnClickToOrderDetail{
+    public interface OnClickToOrderDetail {
         void setOnClickToOrderDetail(int position);
     }
 
@@ -51,14 +52,14 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
         holder.mTxtCreatedDate.setText("Ngày " + orderHistory.getCreatedDate());
         holder.mImgPicture.setImageResource(orderHistory.getPicUrl());
         String orderDetailString = "";
-        for (OrderDetail orderDetail : orderHistory.getOrderDetailList()){
+        for (OrderDetail orderDetail : orderHistory.getOrderDetailList()) {
             orderDetailString += orderDetail.getQuantity() + " x " +
                     orderDetail.getProductName() + "\n";
         }
         holder.mTxtOrderDetail.setText(orderDetailString);
-        holder.mTxtTotal.setText(orderHistory.getTotal() + "");
+        holder.mTxtTotal.setText(CurrencyManager.getPrice(orderHistory.getTotal(), "đ"));
         holder.mTxtPoint.setText("Điểm tích lũy: " + orderHistory.getPoint());
-        if(position == (mOrderHistoryList.size() - 1)){
+        if (position == (mOrderHistoryList.size() - 1)) {
             holder.mLine.setVisibility(View.GONE);
         }
         holder.mLnlOrderDetail.setOnClickListener(new View.OnClickListener() {
@@ -74,7 +75,7 @@ public class OrderHistoryAdapter extends RecyclerView.Adapter<OrderHistoryAdapte
         return mOrderHistoryList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView mTxtOrderCode, mTxtCreatedDate, mTxtOrderDetail,
                 mTxtTotal, mTxtPoint;
         private ImageView mImgPicture;

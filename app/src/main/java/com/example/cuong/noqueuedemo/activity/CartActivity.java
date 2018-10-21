@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.CartAdapter;
 import com.example.cuong.noqueuedemo.model.OrderHistoryDetail;
+import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.ArrayList;
 
@@ -57,9 +58,12 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initalData(){
         mFoodList = new ArrayList<>();
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_1, "Cà phê sữa", "thêm 10% sữa", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_4, "Cà phê đá", "thêm 10% đường", 35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_3, "Cà phê đen", "thêm đá", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_traxanhdaxay, "Trà xanh đá xay",
+                "thêm 10% sữa",35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_sinhtochanh, "Sinh tố chanh",
+                "thêm 10% đường",35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_raisindanish, "Raisin Danish",
+                "",35000));
 
         mCartAdapter = new CartAdapter(mFoodList, CartActivity.this);
         mRecycleViewCart.setAdapter(mCartAdapter);

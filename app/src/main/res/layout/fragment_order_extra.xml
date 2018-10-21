@@ -69,8 +69,8 @@
                     android:layout_height="@dimen/dp72"
                     android:layout_marginRight="@dimen/dp20"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_1"
-                    app:riv_corner_radius="@dimen/dp2" />
+                    android:src="@mipmap/ic_traxanhdaxay"
+                    app:riv_corner_radius="@dimen/dp4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -84,7 +84,7 @@
                         android:ellipsize="end"
                         android:lineSpacingExtra="@dimen/sp8"
                         android:maxLines="2"
-                        android:text="Chiếc xuất từng hạt từ cà phê vùng Cầu Đất, Đà Lạt"
+                        android:text="Hương trà xanh thơm mát hòa quyện vào sữa tươi nguyên chất"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp14" />
 
@@ -97,7 +97,7 @@
                             android:id="@+id/text_view_product_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="39.000 đ"
+                            android:text="35.000 đ"
                             android:textColor="@color/red"
                             android:textSize="@dimen/sp14"
                             android:textStyle="bold" />
@@ -112,45 +112,36 @@
                 android:layout_marginTop="@dimen/dp20"
                 android:background="@color/pale_grey" />
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:id="@+id/linear_layout_item_size"
+            <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingBottom="@dimen/dp32">
+                android:paddingTop="@dimen/dp10">
 
                 <RadioButton
                     android:id="@+id/radio_button_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="@dimen/sp24"
-                    android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp16"
+                    android:layout_marginBottom="@dimen/dp20"
                     android:buttonTint="@color/red"
-                    android:text="Size M" />
-
-            </LinearLayout>
-
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                    android:checked="true"
+                    android:lineSpacingExtra="@dimen/sp24"
+                    android:text="Size M"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="@dimen/sp24"
-                    android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp16"
+                    android:layout_marginBottom="@dimen/dp20"
                     android:buttonTint="@color/red"
-                    android:text="Size L" />
+                    android:lineSpacingExtra="@dimen/sp24"
+                    android:text="Size L (+10.000đ)"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
 
-            </LinearLayout>
-
+            </RadioGroup>
 
             <View
-                android:layout_marginTop="@dimen/dp10"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/pale_grey" />
@@ -273,7 +264,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/dp18"
             android:layout_marginLeft="@dimen/dp30"
-            android:text="98.000đ"
+            android:text="35.000đ"
             android:textColor="@color/white"
             android:textSize="@dimen/sp14" />
 

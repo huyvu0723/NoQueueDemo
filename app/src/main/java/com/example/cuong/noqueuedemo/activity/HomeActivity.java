@@ -62,22 +62,22 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
     private void initialData(){
         mNewsList = new ArrayList<>();
-        mNewsList.add(new News(R.mipmap.ic_new1, "Trà sửa khoai môn khuyến mãi 50% cho dịp hè"));
-        mNewsList.add(new News(R.mipmap.ic_new2, "Bạn ơi, bạn bỏ quên ly trà sửa này!"));
-        mNewsList.add(new News(R.mipmap.ic_new3, "Khai trương cửa hàng mới tại Cao Thắng"));
-        mNewsList.add(new News(R.mipmap.ic_new4, "VietCoffee tuyển dụng cho đại gia đình"));
-        mNewsList.add(new News(R.mipmap.ic_new5, "VietCoffee Hai Bà Trưng khuyến mãi cuối năm"));
-        mNewsList.add(new News(R.mipmap.ic_new6, "Bạn ơi, bạn bỏ quên ly cà phê ở đây nè"));
+        mNewsList.add(new News(R.mipmap.ic_new1, "BÁNH MÌ PHÚC LONG CÙNG CÀ-PHÊ CHO BUỔI SÁNG"));
+        mNewsList.add(new News(R.mipmap.ic_new2, "MỪNG NGÀY PHỤ NỮ VIỆT NAM: SWEET SET & FREE UPSIZE"));
+        mNewsList.add(new News(R.mipmap.ic_new3, "KẾT NỐI YÊU THƯƠNG CÙNG BÁNH TRUNG THU PHÚC LONG"));
+        mNewsList.add(new News(R.mipmap.ic_new4, "MỪNG KHAI TRƯƠNG - PHÚC LONG KHA VẠN CÂN"));
+        mNewsList.add(new News(R.mipmap.ic_new5, "ĂN BÁNH THƯỞNG TRÀ PHÚC LONG THẢ GA"));
+        mNewsList.add(new News(R.mipmap.ic_new6, "MỪNG KHAI TRƯƠNG - PHÚC LONG VINCOM QUANG TRUNG"));
 
         mNewsAdapter = new NewsAdapter(mNewsList, this);
         mRecycleViewNews.setAdapter(mNewsAdapter);
 
 
         mDailyFoodList = new ArrayList<>();
-        mDailyFoodList.add(R.mipmap.ic_1);
-        mDailyFoodList.add(R.mipmap.ic_5);
-        mDailyFoodList.add(R.mipmap.ic_3);
-        mDailyFoodList.add(R.mipmap.ic_4);
+        mDailyFoodList.add(R.mipmap.ic_traxanhdaxay);
+        mDailyFoodList.add(R.mipmap.ic_passioncheesepax);
+        mDailyFoodList.add(R.mipmap.ic_chocolatecroissant);
+        mDailyFoodList.add(R.mipmap.ic_butter_croissant);
 
         mDailyFoodAdapter = new DailyFoodAdapter((ArrayList<Integer>) mDailyFoodList,HomeActivity.this);
         mRecycleViewDailyFood.setAdapter(mDailyFoodAdapter);

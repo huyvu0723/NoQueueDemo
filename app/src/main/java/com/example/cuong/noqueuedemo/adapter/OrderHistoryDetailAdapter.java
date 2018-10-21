@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.model.OrderHistoryDetail;
+import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.List;
 
@@ -37,7 +38,7 @@ public class OrderHistoryDetailAdapter extends RecyclerView.Adapter<OrderHistory
         holder.mImgOrderDetail.setImageResource(orderHistoryDetail.getPicUrl());
         holder.mTxtProductName.setText(orderHistoryDetail.getProductName());
         holder.mTxtExtra.setText(orderHistoryDetail.getExtra());
-        holder.mTxtUnitPrice.setText(orderHistoryDetail.getUnitPrice() + "");
+        holder.mTxtUnitPrice.setText(CurrencyManager.getPrice(orderHistoryDetail.getUnitPrice(), "đ"));
 
     }
 

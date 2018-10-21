@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:paddingBottom="@dimen/dp10"
     android:paddingLeft="@dimen/dp20"
+    android:paddingTop="@dimen/dp20"
     android:paddingRight="@dimen/dp20"
-    android:paddingTop="@dimen/dp20">
+    android:paddingBottom="@dimen/dp10">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -35,10 +35,10 @@
                     android:ellipsize="end"
                     android:letterSpacing="0"
                     android:lineSpacingExtra="@dimen/sp26"
-                    android:maxLines="1"
                     android:maxWidth="@dimen/dp290"
-                    android:text="Cà phê đá"
-                    android:textColor="@color/light_black"
+                    android:maxLines="1"
+                    android:text="98.000đ"
+                    android:textColor="@color/red"
                     android:textSize="@dimen/sp18"
                     android:textStyle="bold" />
 
@@ -75,8 +75,8 @@
                     android:layout_height="@dimen/dp72"
                     android:layout_marginRight="@dimen/dp20"
                     android:scaleType="centerCrop"
-                    android:src="@mipmap/ic_1"
-                    app:riv_corner_radius="@dimen/dp2" />
+                    android:src="@mipmap/ic_traxanhdaxay"
+                    app:riv_corner_radius="@dimen/dp4" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -90,9 +90,10 @@
                         android:ellipsize="end"
                         android:lineSpacingExtra="@dimen/sp8"
                         android:maxLines="2"
-                        android:text="Chiêc xuất từng hạt từ vùng cà phê Cầu Đất, Đà Lạt "
+                        android:text="Trà xanh đá xay"
                         android:textColor="@color/light_black"
-                        android:textSize="@dimen/sp14" />
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -103,7 +104,7 @@
                             android:id="@+id/text_view_product_price"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="39.000 đ"
+                            android:text="35.000 đ"
                             android:textColor="@color/red"
                             android:textSize="@dimen/sp14"
                             android:textStyle="bold" />
@@ -123,42 +124,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/dp32">
+                android:paddingTop="@dimen/dp10">
 
                 <RadioButton
                     android:id="@+id/radio_button_size"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="@dimen/sp24"
-                    android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp16"
                     android:buttonTint="@color/red"
-                    android:text="Size M" />
-
-            </LinearLayout>
-
-
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                    android:checked="true"
+                    android:lineSpacingExtra="@dimen/sp24"
+                    android:text="Size M"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
 
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:lineSpacingExtra="@dimen/sp24"
-                    android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp16"
+                    android:layout_marginTop="@dimen/dp20"
                     android:buttonTint="@color/red"
-                    android:text="Size L" />
+                    android:lineSpacingExtra="@dimen/sp24"
+                    android:text="Size L (+10.000đ)"
+                    android:textColor="@color/light_black"
+                    android:textSize="@dimen/sp16" />
 
             </LinearLayout>
 
 
             <View
-                android:layout_marginTop="@dimen/dp10"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
+                android:layout_marginTop="@dimen/dp10"
                 android:background="@color/pale_grey" />
 
 
@@ -188,8 +183,8 @@
                         android:layout_width="@dimen/dp50"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingBottom="@dimen/dp20"
-                        android:paddingTop="@dimen/dp16">
+                        android:paddingTop="@dimen/dp16"
+                        android:paddingBottom="@dimen/dp20">
 
                         <ImageView
                             android:id="@+id/image_view_decrease"
@@ -213,8 +208,8 @@
                         android:layout_width="@dimen/dp50"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:paddingBottom="@dimen/dp20"
-                        android:paddingTop="@dimen/dp16">
+                        android:paddingTop="@dimen/dp16"
+                        android:paddingBottom="@dimen/dp20">
 
                         <ImageView
                             android:layout_width="wrap_content"
@@ -236,8 +231,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:paddingBottom="@dimen/dp20"
                 android:paddingTop="@dimen/dp20"
+                android:paddingBottom="@dimen/dp20"
                 android:visibility="visible">
 
                 <TextView
@@ -261,39 +256,21 @@
 
             </LinearLayout>
 
-
             <View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="@dimen/dp20"
                 android:background="@color/pale_grey" />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp17"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Tổng"
-                    android:textAllCaps="true"
-                    android:textColor="@color/light_black"
-                    android:textSize="@dimen/sp14"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text_view_item_total"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="right"
-                    android:text="98.000đ"
-                    android:textColor="@color/red"
-                    android:textSize="@dimen/sp16"
-                    android:textStyle="bold" />
-            </LinearLayout>
-
+                android:gravity="center"
+                android:padding="@dimen/dp20"
+                android:text="Bỏ chọn món"
+                android:textColor="@color/red"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

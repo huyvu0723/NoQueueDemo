@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.model.OrderHistoryDetail;
+import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.ArrayList;
 
@@ -47,7 +48,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
         holder.mImgFood.setImageResource(orderHistoryDetail.getPicUrl());
         holder.mFoodName.setText(orderHistoryDetail.getProductName());
         holder.mTxtExtra.setText(orderHistoryDetail.getExtra());
-        holder.mTxtTotal.setText(orderHistoryDetail.getUnitPrice() + "");
+        holder.mTxtTotal.setText(CurrencyManager.getPrice(orderHistoryDetail.getUnitPrice(), "đ"));
         holder.mLnlFoodItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

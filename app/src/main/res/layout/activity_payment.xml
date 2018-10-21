@@ -56,6 +56,7 @@
                     android:layout_height="wrap_content">
 
                     <RadioButton
+                        android:checked="true"
                         android:id="@+id/radio_button_cash"
                         android:layout_width="wrap_content"
                         android:layout_height="@dimen/dp55"
@@ -113,13 +114,13 @@
                         android:layout_width="@dimen/dp36"
                         android:layout_height="@dimen/dp30"
                         android:layout_marginRight="@dimen/sp16"
-                        android:src="@mipmap/ic_cash" />
+                        android:src="@mipmap/ic_momo" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:text="Thanh toán bằng thẻ"
+                        android:text="Thanh toán bằng MoMo"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp16" />
 

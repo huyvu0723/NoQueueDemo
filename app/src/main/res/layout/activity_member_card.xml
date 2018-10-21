@@ -102,8 +102,8 @@
 
                                 <ImageView
                                     android:id="@+id/image_view_bar_code"
-                                    android:layout_width="241dp"
-                                    android:layout_height="64dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
                                     android:layout_gravity="center"
                                     android:scaleType="fitXY"
                                     android:src="@mipmap/ic_bar_code" />
@@ -190,7 +190,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="@dimen/dp8"
-                        android:text="VietCoffee rewards"
+                        android:text="SoT rewards"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp18"
                         android:textStyle="bold" />
@@ -208,7 +208,7 @@
                         android:id="@+id/text_view_card_point"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="120 điểm"
+                        android:text="32 điểm"
                         android:textColor="@color/red"
                         android:textSize="@dimen/sp18"
                         android:textStyle="bold" />
@@ -257,7 +257,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/dp8"
                         android:background="@drawable/background_progress_bar_"
-                        android:progress="25"
+                        android:progress="8"
                         android:progressBackgroundTint="@color/pale_grey" />
                 </LinearLayout>
 
