@@ -1,40 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linear_layout_food_item"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:id="@+id/image_view_order_history_detail"
-        android:layout_width="@dimen/dp72"
-        android:layout_height="@dimen/dp72"
-        android:src="@mipmap/ic_launcher"
-        app:riv_corner_radius="@dimen/dp5" />
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dp10">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/dp10"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
 
-        <TextView
-            android:id="@+id/text_view_product_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/dp6"
-            android:text="Cơm gà xối mỡ"
-            android:textColor="@color/light_black"
-            android:textSize="@dimen/sp15"
-            android:textStyle="bold" />
+        android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/text_view_extra"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="thêm 1 phần Canh "
-            android:textColor="@color/light_black"
-            android:textSize="@dimen/sp12" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image_view_order_history_detail"
+            android:layout_width="@dimen/dp72"
+            android:layout_height="@dimen/dp72"
+            android:src="@mipmap/ic_launcher"
+            app:riv_corner_radius="@dimen/dp5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp10"
+            android:orientation="vertical"
+            android:paddingRight="@dimen/dp60">
+
+            <TextView
+                android:id="@+id/text_view_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp6"
+                android:maxLines="2"
+                android:text="2 x Cơm gà xối mỡ"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/sp15"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_extra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="thêm 1 phần Canh "
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/sp12" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
@@ -47,10 +58,9 @@
             android:id="@+id/text_view_unit_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="37.000đ"
+            android:text="70.000đ"
             android:textColor="@color/light_black"
-            android:textSize="@dimen/sp14"
-            android:textStyle="bold" />
+            android:textSize="@dimen/sp14" />
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>

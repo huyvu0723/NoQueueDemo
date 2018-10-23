@@ -18,6 +18,7 @@ import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.CouponAdapter;
 import com.example.cuong.noqueuedemo.fragment.MemberTypeFragment;
 import com.example.cuong.noqueuedemo.model.Coupon;
+import com.example.cuong.noqueuedemo.utils.ConstantDataManager;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;
@@ -55,6 +56,7 @@ public class MemberCardActivity extends AppCompatActivity implements View.OnClic
         LinearLayoutManager layoutManager = new LinearLayoutManager(MemberCardActivity.this,
                 LinearLayoutManager.VERTICAL, false);
         mRecyclerViewCoupons.setLayoutManager(layoutManager);
+        mRecyclerViewCoupons.setNestedScrollingEnabled(false);
         mLnlBack = findViewById(R.id.linear_layout_icon_back);
         mLnlBack.setOnClickListener(this);
         mTxtAllCoupons = findViewById(R.id.text_view_all_coupons);
@@ -84,9 +86,18 @@ public class MemberCardActivity extends AppCompatActivity implements View.OnClic
 
     private void createSmartTabLayout() {
         FragmentPagerItems.Creator creator = FragmentPagerItems.with(getApplicationContext());
-        creator.add("Green", MemberTypeFragment.class);
-        creator.add("Silver", MemberTypeFragment.class);
-        creator.add("Gold", MemberTypeFragment.class);
+
+        Bundle bundle = new Bundle();
+        bundle.putInt(ConstantDataManager.BUNDLE_MEMBERCARD_TYPE, 1);
+        creator.add("Green", MemberTypeFragment.class, bundle);
+
+        bundle = new Bundle();
+        bundle.putInt(ConstantDataManager.BUNDLE_MEMBERCARD_TYPE, 2);
+        creator.add("Silver", MemberTypeFragment.class, bundle);
+
+        bundle = new Bundle();
+        bundle.putInt(ConstantDataManager.BUNDLE_MEMBERCARD_TYPE, 3);
+        creator.add("Gold", MemberTypeFragment.class, bundle);
         mMemberFragmentAdapter = new FragmentPagerItemAdapter(getSupportFragmentManager(),
                 creator.create());
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager_membership_card_type);

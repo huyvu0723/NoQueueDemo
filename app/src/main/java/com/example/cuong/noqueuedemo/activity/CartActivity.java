@@ -13,12 +13,13 @@ import android.widget.TextView;
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.CartAdapter;
 import com.example.cuong.noqueuedemo.model.OrderHistoryDetail;
+import com.example.cuong.noqueuedemo.utils.ConstantDataManager;
 import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.ArrayList;
 
-public class CartActivity extends AppCompatActivity implements View.OnClickListener{
-    private LinearLayout mLnlPromotion, mLnlNote, mLnlOrder;
+public class CartActivity extends AppCompatActivity implements View.OnClickListener {
+    private LinearLayout mLnlPromotion, mLnlNote, mLnlOrder, mLnlBack;
     private TextView mLnlPayment;
     private RecyclerView mRecycleViewCart;
     private CartAdapter mCartAdapter;
@@ -33,12 +34,12 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    public static void intentToCartActivity(Activity activity){
+    public static void intentToCartActivity(Activity activity) {
         Intent intent = new Intent(activity, CartActivity.class);
         activity.startActivity(intent);
     }
 
-    private void intialView(){
+    private void intialView() {
         mLnlPromotion = findViewById(R.id.linear_layout_coupon);
         mLnlPromotion.setOnClickListener(this);
         mLnlNote = findViewById(R.id.linear_layout_note);
@@ -54,30 +55,34 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
                 LinearLayoutManager.VERTICAL, false);
         mRecycleViewCart.setLayoutManager(layoutManager);
 
+        mLnlBack = findViewById(R.id.linear_layout_icon_back);
+        mLnlBack.setOnClickListener(this);
     }
 
-    private void initalData(){
+    private void initalData() {
         mFoodList = new ArrayList<>();
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_traxanhdaxay, "Trà xanh đá xay",
-                "thêm 10% sữa",35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_sinhtochanh, "Sinh tố chanh",
-                "thêm 10% đường",35000));
-        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_raisindanish, "Raisin Danish",
-                "",35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_traxanhdaxay, "1 x Trà xanh đá xay",
+                "thêm 10% sữa", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_comcalocbongkhoto, "1 x Cơm cá lóc bông kho tộ",
+                "thêm 10% đường", 35000));
+        mFoodList.add(new OrderHistoryDetail(R.mipmap.ic_raisindanish, "1 x Raisin Danish",
+                "", 35000));
 
         mCartAdapter = new CartAdapter(mFoodList, CartActivity.this);
         mRecycleViewCart.setAdapter(mCartAdapter);
         mCartAdapter.setmOnClickToFoodItem(new CartAdapter.OnClickToFoodItem() {
             @Override
             public void setOnClickToItem(int position) {
-                EditOrderDetailActivity.intentToEditOrderDetailActivity(CartActivity.this);
+                Bundle bundle = new Bundle();
+                bundle.putInt(ConstantDataManager.BUNDLE_IS_PRODUCT, position);
+                EditOrderDetailActivity.intentToEditOrderDetailActivity(CartActivity.this, bundle);
             }
         });
     }
 
     @Override
     public void onClick(View v) {
-        switch(v.getId()){
+        switch (v.getId()) {
             case R.id.linear_layout_coupon:
                 PromotionActivity.intentToPromotionActivity(CartActivity.this);
                 break;
@@ -97,6 +102,10 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
                 OrderSuccessActivity.intentToOrderSuccessActivity(CartActivity.this);
                 finish();
                 break;
+            case R.id.linear_layout_icon_back:
+                finish();
+                break;
+
         }
     }
 }

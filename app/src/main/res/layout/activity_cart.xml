@@ -418,6 +418,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp40"
+                        android:buttonTint="@color/red"
                         android:text="Yêu cầu xuất hóa đơn"
                         android:textColor="@color/light_black"
                         android:textSize="@dimen/sp12" />

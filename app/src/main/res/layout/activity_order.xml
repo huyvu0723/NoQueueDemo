@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
+    android:focusableInTouchMode="true"
     tools:context=".activity.OrderActivity">
 
     <LinearLayout
@@ -12,26 +13,34 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical">
+            android:layout_height="wrap_content">
 
-            <ImageView
-                android:id="@+id/image_view_icon_back"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="@dimen/dp16"
-                android:src="@mipmap/ic_back" />
+                android:gravity="center_vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp16"
-                android:text="CHỌN MÓN"
-                android:textColor="@color/red"
-                android:textSize="@dimen/sp18"
-                android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/image_view_icon_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp16"
+                    android:src="@mipmap/ic_back" />
+
+                <EditText
+                    android:id="@+id/edit_text_shop_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:background="@android:color/transparent"
+                    android:hint="Phúc Long"
+                    android:textColor="@color/light_black"
+                    android:textColorHint="@color/red"
+                    android:textSize="@dimen/sp18" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -40,14 +49,20 @@
 
                 <ImageView
                     android:id="@+id/image_view_refresh"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:paddingLeft="@dimen/dp16"
-                    android:paddingRight="@dimen/dp16"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="@dimen/dp48"
+                    android:padding="@dimen/dp14"
                     android:src="@mipmap/ic_refresh" />
+
+                <ImageView
+                    android:id="@+id/image_view_search"
+                    android:layout_width="@dimen/dp48"
+                    android:layout_height="@dimen/dp48"
+                    android:padding="@dimen/dp12"
+                    android:src="@mipmap/ic_search" />
             </LinearLayout>
 
-        </LinearLayout>
+        </FrameLayout>
 
         <com.ogaclejapan.smarttablayout.SmartTabLayout
             android:id="@+id/view_pager_tab"

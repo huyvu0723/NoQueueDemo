@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -65,7 +66,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder>{
     public class ViewHolder extends RecyclerView.ViewHolder{
         public ImageView mImgFood;
         public TextView mFoodName, mTxtExtra, mTxtTotal;
-        public LinearLayout mLnlFoodItem;
+        public FrameLayout mLnlFoodItem;
 
         public ViewHolder(View itemView) {
             super(itemView);

@@ -46,6 +46,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         LinearLayoutManager linearLayout = new LinearLayoutManager(
                 HomeActivity.this, LinearLayoutManager.VERTICAL, false);
         mRecycleViewNews.setLayoutManager(linearLayout);
+        mRecycleViewNews.setNestedScrollingEnabled(false);
 
         mLnlProfile = findViewById(R.id.linear_layout_user_pircture);
         mLnlProfile.setOnClickListener(this);
@@ -57,6 +58,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         linearLayout = new LinearLayoutManager(
                 HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
         mRecycleViewDailyFood.setLayoutManager(linearLayout);
+        mRecycleViewDailyFood.setNestedScrollingEnabled(false);
 
     }
 

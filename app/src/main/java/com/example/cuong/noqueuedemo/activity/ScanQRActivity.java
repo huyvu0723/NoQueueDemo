@@ -79,7 +79,7 @@ public class ScanQRActivity extends AppCompatActivity implements View.OnClickLis
         dialog.setContentView(R.layout.dialog_table_number);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         TextView txtTableNumber = dialog.findViewById(R.id.text_view_table_number);
-        txtTableNumber.setText("Bạn đang ở bàn số " + tableNumber);
+        txtTableNumber.setText("Bạn đang ở Phúc Long \n Bàn số " + tableNumber);
         Button btnChooseFood = dialog.findViewById(R.id.button_choose_food);
         btnChooseFood.setOnClickListener(new View.OnClickListener() {
             @Override

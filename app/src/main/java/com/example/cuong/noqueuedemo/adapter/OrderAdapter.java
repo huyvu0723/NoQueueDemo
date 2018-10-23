@@ -8,17 +8,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.cuong.noqueuedemo.R;
-import com.example.cuong.noqueuedemo.model.Food;
-import com.squareup.picasso.Picasso;
+import com.example.cuong.noqueuedemo.model.Product;
+import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 
 import java.util.List;
 
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
-    private List<Food> mFoodList;
+    private List<Product> mProductList;
     private Context mContext;
     private OnClickToProductItem mOnClickToProductItem;
 
@@ -26,8 +25,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
         this.mOnClickToProductItem = mOnClickToProductItem;
     }
 
-    public OrderAdapter(List<Food> mFoodList, Context mContext) {
-        this.mFoodList = mFoodList;
+    public OrderAdapter(List<Product> mProductList, Context mContext) {
+        this.mProductList = mProductList;
         this.mContext = mContext;
     }
 
@@ -46,10 +45,10 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-        Food food = mFoodList.get(position);
-        holder.mImgPicture.setImageResource(food.getPicUrl());
-        holder.mTxtTitle.setText(food.getProductName());
-        holder.mTxtPrice.setText(food.getUnitPrice() + "");
+        Product product = mProductList.get(position);
+        holder.mImgPicture.setImageResource(product.getPicUrl());
+        holder.mTxtTitle.setText(product.getProductName());
+        holder.mTxtPrice.setText(CurrencyManager.getPrice(product.getUnitPrice(), " đ"));
         holder.mCardViewFoodItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,7 +59,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
 
     @Override
     public int getItemCount() {
-        return mFoodList.size();
+        return mProductList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{

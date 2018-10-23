@@ -74,7 +74,8 @@
                             android:id="@+id/image_view_bar_code"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:src="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher"
+                            android:scaleType="fitXY"/>
 
                     </LinearLayout>
                 </LinearLayout>
@@ -131,7 +132,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp5"
-                        android:text="SOT23102018"
+                        android:text=""
                         android:textColor="@color/light_black" />
 
                     <TextView
@@ -231,7 +232,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="right"
-                            android:text="35.000đ"
+                            android:text="105.000đ"
                             android:textColor="@color/light_black"
                             android:textSize="@dimen/sp14" />
                     </LinearLayout>
@@ -281,7 +282,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="right"
-                            android:text="35.000đ"
+                            android:text="105.000đ"
                             android:textColor="@color/light_black"
                             android:textSize="@dimen/sp14" />
                     </LinearLayout>

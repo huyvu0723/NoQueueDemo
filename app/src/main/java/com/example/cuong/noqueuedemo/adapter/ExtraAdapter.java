@@ -15,7 +15,7 @@ import com.example.cuong.noqueuedemo.model.ProductExtra;
 
 import java.util.ArrayList;
 
-public class ExtraAdapter extends RecyclerView.Adapter<ExtraAdapter.ViewHolder>{
+public class ExtraAdapter extends RecyclerView.Adapter<ExtraAdapter.ViewHolder> {
 
     private ArrayList<ProductExtra> mExtraList;
     private Context mContext;
@@ -34,11 +34,14 @@ public class ExtraAdapter extends RecyclerView.Adapter<ExtraAdapter.ViewHolder>{
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final ViewHolder holder,final int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
         ProductExtra extra = mExtraList.get(position);
-
-        holder.mTxtExtraName.setText(extra.getProductName() + " (+"
-                + extra.getUnitPrice() + ")");
+        if (extra.getUnitPrice() > 0) {
+            holder.mTxtExtraName.setText(extra.getProductName() + " (+"
+                    + extra.getUnitPrice() + ")");
+        } else {
+            holder.mTxtExtraName.setText(extra.getProductName());
+        }
         holder.mChkExtra.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

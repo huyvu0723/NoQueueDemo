@@ -42,6 +42,7 @@ public class OrderHistoryActivity extends AppCompatActivity implements View.OnCl
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(OrderHistoryActivity.this,
                 LinearLayoutManager.VERTICAL, false);
         mRecycleViewOrderHistory.setLayoutManager(linearLayoutManager);
+        mRecycleViewOrderHistory.setNestedScrollingEnabled(false);
 
         mLnlBack = findViewById(R.id.linear_layout_icon_back);
         mLnlBack.setOnClickListener(this);
@@ -50,30 +51,6 @@ public class OrderHistoryActivity extends AppCompatActivity implements View.OnCl
     private void initialData() {
         mOrderHistoryList = new ArrayList<>();
         ArrayList<OrderDetail> orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Trà xanh đá xay", 1));
-        orderDetailList.add(new OrderDetail("Raisin Danish", 2));
-        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.ic_traxanhdaxay, orderDetailList, 105000, 10));
-
-        orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Trà xanh đá xay", 1));
-        orderDetailList.add(new OrderDetail("Raisin Danish", 2));
-        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.ic_traxanhdaxay, orderDetailList, 105000, 10));
-
-        orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Trà xanh đá xay", 1));
-        orderDetailList.add(new OrderDetail("Raisin Danish", 2));
-        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.ic_traxanhdaxay, orderDetailList, 105000, 10));
-
-        orderDetailList = new ArrayList<>();
-        orderDetailList.add(new OrderDetail("Trà xanh đá xay", 1));
-        orderDetailList.add(new OrderDetail("Raisin Danish", 2));
-        mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",
-                R.mipmap.ic_traxanhdaxay, orderDetailList, 105000, 10));
-
-        orderDetailList = new ArrayList<>();
         orderDetailList.add(new OrderDetail("Trà xanh đá xay", 1));
         orderDetailList.add(new OrderDetail("Raisin Danish", 2));
         mOrderHistoryList.add(new OrderHistory("#060918GGWP", "06/10/2018",

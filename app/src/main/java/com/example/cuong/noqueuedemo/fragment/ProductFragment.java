@@ -14,15 +14,17 @@ import android.view.ViewGroup;
 
 import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.adapter.OrderAdapter;
-import com.example.cuong.noqueuedemo.model.Food;
+import com.example.cuong.noqueuedemo.model.Product;
+import com.example.cuong.noqueuedemo.utils.ConstantDataManager;
 import com.example.cuong.noqueuedemo.utils.GridSpacingItemDecoration;
 
 import java.util.ArrayList;
 
-public class FoodFragment extends Fragment {
+public class ProductFragment extends Fragment {
     private RecyclerView mRecycleViewFood;
-    private ArrayList<Food> mFoodList;
+    private ArrayList<Product> mProductList;
     private OrderAdapter mOrderAdapter;
+    private int isCategory;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -34,8 +36,15 @@ public class FoodFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        getInitialIntent();
         initialView();
         initialData();
+    }
+
+    private void getInitialIntent() {
+        Bundle bundle = getArguments();
+        mProductList = (ArrayList<Product>) bundle.getSerializable(ConstantDataManager.BUNDLE_HOME_DRINK);
+        isCategory = bundle.getInt(ConstantDataManager.BUNDLE_IS_CATEGORY);
     }
 
     private void initialView() {
@@ -49,16 +58,8 @@ public class FoodFragment extends Fragment {
                 numberOfColumn, spacingInPixels, true));
     }
 
-    private void initialData(){
-        mFoodList = new ArrayList<>();
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Cà phê đá", 30000));
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Cà phê sữa", 30000));
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Cà phê đá xây", 30000));
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Latte coffee", 30000));
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Matcha coffee", 30000));
-        mFoodList.add(new Food(R.mipmap.ic_traxanhdaxay, "Trà sữa", 30000));
-
-        mOrderAdapter = new OrderAdapter(mFoodList, getActivity());
+    private void initialData() {
+        mOrderAdapter = new OrderAdapter(mProductList, getActivity());
         mRecycleViewFood.setAdapter(mOrderAdapter);
         mOrderAdapter.setmOnClickToProductItem(new OrderAdapter.OnClickToProductItem() {
             @Override
@@ -77,7 +78,9 @@ public class FoodFragment extends Fragment {
 
     private void showBottomSheet(final int position) {
         final OrderExtraFragment addOrderExtraBottomDialogFragment = OrderExtraFragment.newInstance();
+        Bundle bundle = new Bundle();
+        bundle.putInt(ConstantDataManager.BUNDLE_IS_CATEGORY, isCategory);
+        addOrderExtraBottomDialogFragment.setArguments(bundle);
         addOrderExtraBottomDialogFragment.show(getFragmentManager(), "Show bottom sheet diaplog product detail");
-
     }
 }

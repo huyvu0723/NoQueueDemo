@@ -8,9 +8,10 @@
     tools:context=".fragment.MemberTypeFragment">
 
     <TextView
+        android:id="@+id/text_view_point"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Còn 65 điểm nữa để thăng hạng"
+        android:text="Còn 68 điểm nữa để thăng hạng"
         android:textColor="@color/light_black"
         android:textSize="@dimen/sp14" />
 

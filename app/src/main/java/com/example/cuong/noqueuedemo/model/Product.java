@@ -1,6 +1,8 @@
 package com.example.cuong.noqueuedemo.model;
 
-public class Food {
+import java.io.Serializable;
+
+public class Product implements Serializable {
     private int productId;
     private int picUrl;
     private String productName;
@@ -10,13 +12,13 @@ public class Food {
     private int catId;
     private double finalPrice;
 
-    public Food(int picUrl, String productName, double unitPrice) {
+    public Product(int picUrl, String productName, double unitPrice) {
         this.picUrl = picUrl;
         this.productName = productName;
         this.unitPrice = unitPrice;
     }
 
-    public Food() {
+    public Product() {
     }
 
     public int getProductId() {

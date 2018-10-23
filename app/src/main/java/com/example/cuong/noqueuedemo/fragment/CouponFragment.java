@@ -18,6 +18,7 @@ import com.example.cuong.noqueuedemo.R;
 import com.example.cuong.noqueuedemo.activity.CouponDetailActivity;
 import com.example.cuong.noqueuedemo.adapter.CouponAdapter;
 import com.example.cuong.noqueuedemo.model.Coupon;
+import com.example.cuong.noqueuedemo.utils.ConstantDataManager;
 
 import java.util.ArrayList;
 
@@ -50,14 +51,10 @@ public class CouponFragment extends Fragment {
     }
 
     private void intialData(){
-        mCouponList = new ArrayList<>();
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_new1,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_new7,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_new2,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_new3,"30/10/2018"));
-        mCouponList.add(new Coupon("Giảm 30% khi gọi nhóm 4 người", R.mipmap.ic_new4,"30/10/2018"));
+        Bundle bundle = getArguments();
+        ArrayList<Coupon> couponList = (ArrayList<Coupon>) bundle.getSerializable(ConstantDataManager.BUNDLE);
 
-        mCouponAdapter = new CouponAdapter(getContext(), mCouponList);
+        mCouponAdapter = new CouponAdapter(getContext(), couponList);
         mRecycleViewCoupons.setAdapter(mCouponAdapter);
         mCouponAdapter.setOnCouponDetailListener(new CouponAdapter.OnClickCouponDetailCallBack() {
             @Override
