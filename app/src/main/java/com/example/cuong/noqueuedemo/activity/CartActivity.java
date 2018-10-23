@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -19,11 +21,13 @@ import com.example.cuong.noqueuedemo.utils.CurrencyManager;
 import java.util.ArrayList;
 
 public class CartActivity extends AppCompatActivity implements View.OnClickListener {
-    private LinearLayout mLnlPromotion, mLnlNote, mLnlOrder, mLnlBack;
-    private TextView mLnlPayment;
+    private LinearLayout mLnlPromotion, mLnlNote, mLnlOrder, mLnlBack, mLnlPayment;
+    private TextView mLnlEditPayment;
     private RecyclerView mRecycleViewCart;
     private CartAdapter mCartAdapter;
     private ArrayList<OrderHistoryDetail> mFoodList;
+    private FrameLayout mFmlPayment;
+    private CheckBox mChkExport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +48,8 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
         mLnlPromotion.setOnClickListener(this);
         mLnlNote = findViewById(R.id.linear_layout_note);
         mLnlNote.setOnClickListener(this);
-        mLnlPayment = findViewById(R.id.text_view_edit_payment);
-        mLnlPayment.setOnClickListener(this);
+        mLnlEditPayment = findViewById(R.id.text_view_edit_payment);
+        mLnlEditPayment.setOnClickListener(this);
         mLnlOrder = findViewById(R.id.linear_layout_order);
         mLnlOrder.setOnClickListener(this);
 
@@ -57,6 +61,10 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
 
         mLnlBack = findViewById(R.id.linear_layout_icon_back);
         mLnlBack.setOnClickListener(this);
+        mLnlPayment = findViewById(R.id.linear_layout_payment);
+        mLnlPayment.setOnClickListener(this);
+        mFmlPayment = findViewById(R.id.frame_layout_payment);
+        mChkExport = findViewById(R.id.check_box_export_report);
     }
 
     private void initalData() {
@@ -105,7 +113,22 @@ public class CartActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.linear_layout_icon_back:
                 finish();
                 break;
+            case R.id.linear_layout_payment:
+                Intent intent = new Intent(CartActivity.this, PaymentActivity.class);
+                startActivityForResult(intent, ConstantDataManager.REQUEST_CODE_PAYMENT);
+                break;
+        }
+    }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        switch(requestCode){
+            case ConstantDataManager.REQUEST_CODE_PAYMENT:
+                mLnlPayment.setVisibility(View.GONE);
+                mFmlPayment.setVisibility(View.VISIBLE);
+                mChkExport.setVisibility(View.VISIBLE);
+                break;
         }
     }
 }

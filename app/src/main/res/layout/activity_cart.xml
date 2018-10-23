@@ -380,10 +380,43 @@
                     android:orientation="horizontal"
                     android:padding="@dimen/dp16">
 
-                    <FrameLayout
+                    <LinearLayout
+                        android:id="@+id/linear_layout_payment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
                         android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PHƯƠNG THỨC THANH TOÁN"
+                            android:textAllCaps="true"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:src="@mipmap/ic_view_more" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/frame_layout_payment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
 
                         <ImageView
                             android:id="@+id/image_view_payment_type"
@@ -415,13 +448,15 @@
                     </FrameLayout>
 
                     <CheckBox
+                        android:id="@+id/check_box_export_report"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp40"
                         android:buttonTint="@color/red"
                         android:text="Yêu cầu xuất hóa đơn"
                         android:textColor="@color/light_black"
-                        android:textSize="@dimen/sp12" />
+                        android:textSize="@dimen/sp12"
+                        android:visibility="gone" />
                 </FrameLayout>
 
             </LinearLayout>

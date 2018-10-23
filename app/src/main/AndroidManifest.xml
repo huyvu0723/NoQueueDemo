@@ -19,11 +19,7 @@
 
         </activity>
         <activity android:name=".activity.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.LoginActivity"
@@ -33,7 +29,11 @@
 
         </activity>
         <activity android:name=".activity.CartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".activity.CustomerInfoActivity" />
         <activity android:name=".activity.ScanQRActivity" />

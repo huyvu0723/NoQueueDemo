@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.cuong.noqueuedemo.R;
+import com.example.cuong.noqueuedemo.utils.ConstantDataManager;
 
 public class PaymentActivity extends AppCompatActivity implements View.OnClickListener{
     private LinearLayout mLnLBack;
@@ -41,6 +42,8 @@ public class PaymentActivity extends AppCompatActivity implements View.OnClickLi
                 finish();
                 break;
             case R.id.button_dong_y:
+                Intent intent = new Intent();
+                setResult(RESULT_OK, intent);
                 finish();
                 break;
         }
